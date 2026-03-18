@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omega-spatial"
+version = "0.1.0"
+description = "One-command spatial control pipeline for mixed-section Visium data."
+readme = "framework_details.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scikit-learn>=1.3",
+  "scipy>=1.10",
+  "h5py>=3.10",
+  "PyYAML>=6.0",
+  "matplotlib>=3.8",
+  "jinja2>=3.1",
+]
+
+[project.scripts]
+Omega-spatial = "omega_spatial.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["omega_spatial*"]
