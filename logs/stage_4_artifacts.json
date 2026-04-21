@@ -1,0 +1,87 @@
+{
+  "checkpoint_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_4_artifacts/bridge_model.npz",
+  "checkpoint_sidecar_summary": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_4_artifacts/bridge_model.summary.json",
+  "model_interface_entry_points": {
+    "transport": "omega_spatial.model.generate_counterfactuals(model, expr, context, n_steps=..., step_size=...)",
+    "transport_alias": "omega_spatial.model.transport_states(...)",
+    "method": "SpatialBridgeModel.transport(expr, context, n_steps=..., step_size=...)"
+  },
+  "umap_figure_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_4_figures/stage_4_umap_observed_marginal_labels.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_4_figures/stage_4_umap_transported_marginal_labels.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_4_figures/stage_4_umap_delta_distance_toward_reference.png"
+  ],
+  "test_script_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/tests/test_stage_4_bridge_model.py",
+  "known_training_limitations": [
+    "Linear ridge drift field; not a full entropic OT solver.",
+    "Reference mean is computed from spots labeled 'normal' only when present.",
+    "Transport uses explicit Euler integration of the learned field (fixed step count).",
+    "Synthetic fixture uses Poisson count-like expression; real Visium may need QC and tuning of ridge_lambda / steps."
+  ],
+  "expected_downstream_inputs": [
+    "expr: float array, shape (n_spots, n_genes), same row order as bundle.obs and Stage 3 context.",
+    "context: float array, shape (n_spots, n_genes), neighbor-mean expression from Stage 3.",
+    "labels: only required during training; inference uses the fitted normal_reference inside the model."
+  ],
+  "expected_downstream_outputs": [
+    "transported expression float array, shape (n_spots, n_genes), finite values if inputs are finite.",
+    "perturbation vector per spot: transported - expr (computed by caller)."
+  ],
+  "stage_5_handoff": {
+    "entry_points": {
+      "transport": "omega_spatial.model.generate_counterfactuals(model, expr, context, n_steps=..., step_size=...)",
+      "transport_alias": "omega_spatial.model.transport_states(...)",
+      "method": "SpatialBridgeModel.transport(expr, context, n_steps=..., step_size=...)"
+    },
+    "input_ordering": [
+      "expr: float array, shape (n_spots, n_genes), same row order as bundle.obs and Stage 3 context.",
+      "context: float array, shape (n_spots, n_genes), neighbor-mean expression from Stage 3.",
+      "labels: only required during training; inference uses the fitted normal_reference inside the model."
+    ],
+    "outputs_guaranteed": [
+      "transported expression float array, shape (n_spots, n_genes), finite values if inputs are finite.",
+      "perturbation vector per spot: transported - expr (computed by caller)."
+    ],
+    "diagnostics_stage5_should_preserve": [
+      "transport_sanity_metrics(expr, transported, labels, model.normal_reference)",
+      "training_summary (JSON sidecar next to checkpoint)",
+      "random seed used for any stochastic validation (UMAP); model fit is deterministic given data and config."
+    ]
+  },
+  "umap_random_state": 42,
+  "counterfactual_sanity_metrics": {
+    "all_spots": {
+      "mean_dist_pre": 26.574946268570862,
+      "mean_dist_post": 12.46638317147249,
+      "mean_delta_toward_ref": 14.108563097098372
+    },
+    "label_tumor": {
+      "n": 160,
+      "mean_dist_pre": 31.163857678406725,
+      "mean_dist_post": 14.715483987098207,
+      "mean_delta_toward_ref": 16.448373691308518
+    },
+    "label_normal": {
+      "n": 160,
+      "mean_dist_pre": 21.986034858734996,
+      "mean_dist_post": 10.21728235584677,
+      "mean_delta_toward_ref": 11.768752502888224
+    }
+  },
+  "training_summary": {
+    "n_spots": 320,
+    "n_genes": 48,
+    "n_normal": 160,
+    "n_tumor": 160,
+    "n_intermediate": 0,
+    "n_other_label": 0,
+    "ridge_lambda": 0.01,
+    "spatial_smoothing_alpha": 0.25,
+    "reverse_step_size": 0.18,
+    "default_transport_n_steps": 12,
+    "residual_frobenius": 1.2668149590597004,
+    "mean_residual_l2_per_spot": 0.05727706201405118,
+    "normal_reference_l2_norm": 69.48950685175424,
+    "warnings": []
+  }
+}

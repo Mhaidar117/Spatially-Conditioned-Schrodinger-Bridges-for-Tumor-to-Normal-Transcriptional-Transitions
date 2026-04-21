@@ -1,0 +1,27 @@
+2026-03-22 15:23:57,577 INFO Stage 3 spatial context validation (repo root: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations)
+2026-03-22 15:23:57,581 INFO Coordinate columns: x, y; section column: section_id
+2026-03-22 15:23:57,581 INFO k_neighbors=8
+2026-03-22 15:23:57,595 WARNING Section 'sec_C' has a single spot; neighbors padded with self.
+2026-03-22 15:23:57,595 WARNING Found 3 spots with duplicate (x,y) within the same section.
+2026-03-22 15:23:57,602 INFO Wrote graph/context arrays to /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_artifacts
+2026-03-22 15:23:58,151 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_pre_context_section_id.png
+2026-03-22 15:23:58,296 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_context_enriched_section_id.png
+2026-03-22 15:23:58,429 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_neighborhood_diagnostics_mean_neighbor_distance.png
+2026-03-22 15:23:58,429 INFO Logged UMAP path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_pre_context_section_id.png
+2026-03-22 15:23:58,429 INFO Logged UMAP path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_context_enriched_section_id.png
+2026-03-22 15:23:58,429 INFO Logged UMAP path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_neighborhood_diagnostics_mean_neighbor_distance.png
+2026-03-22 15:23:58,429 INFO Neighbor distance summaries (mean over k per spot): {"mean": 1.374999826557081, "std": 0.3079660501988958, "p50": 1.4785533905932737, "p90": 1.839347080264858}
+2026-03-22 15:24:21,607 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_visium_subset_pre_context_section_id.png
+2026-03-22 15:24:21,802 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_visium_subset_context_enriched_section_id.png
+2026-03-22 15:24:22,075 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_visium_subset_neighborhood_diagnostics_mean_neighbor_distance.png
+2026-03-22 15:24:22,165 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_3_artifacts.json
+2026-03-22 15:24:22,165 INFO Produced artifacts: [
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_3_spatial_context.log",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_3_artifacts.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_artifacts/knn_indices.npy",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_artifacts/neighbor_distances.npy",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_artifacts/context_matrix.npy",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_pre_context_section_id.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_context_enriched_section_id.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_neighborhood_diagnostics_mean_neighbor_distance.png"
+]

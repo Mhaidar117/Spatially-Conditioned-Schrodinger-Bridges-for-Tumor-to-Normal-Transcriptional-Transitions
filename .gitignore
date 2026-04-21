@@ -56,3 +56,9 @@ results/
 # OS
 .DS_Store
 Thumbs.db
+
+# manuscript writer
+manuscript_writer.py
+manuscript.aux
+manuscript.log
+manuscript.out

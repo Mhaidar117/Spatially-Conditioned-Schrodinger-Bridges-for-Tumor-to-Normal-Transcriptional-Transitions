@@ -1,0 +1,77 @@
+{
+  "score_source": "fallback_expression_program_hvg_proxy",
+  "malignancy_provenance": "fallback_expression_program_hvg_proxy",
+  "decision_path": [
+    "no_existing_malignancy_column",
+    "expression_program_hvg_fallback"
+  ],
+  "stage_2_warnings": [
+    "Used HVG expression-program malignancy proxy (data_exploration-style fallback, not curated program banks); n_hvg=800."
+  ],
+  "assigned_output_columns": [
+    "cna_score",
+    "marginal_label",
+    "malignancy_provenance",
+    "cna_low_threshold",
+    "cna_high_threshold",
+    "is_pseudo_paired_within_section",
+    "spot_representation"
+  ],
+  "per_section_summary_artifact_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/malignancy_counts_by_section.csv"
+  ],
+  "umap_figure_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_cna_score.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_marginal_labels.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_malignancy_provenance.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_cna_score.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_marginal_labels.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_malignancy_provenance.png"
+  ],
+  "test_script_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/tests/test_stage_2_marginal_definition.py",
+  "known_edge_cases": [
+    "Sections with no finite scores: all intermediate.",
+    "Chromosomal CNA inference requires gene_annotation_path and sufficient gene mapping; otherwise HVG fallback runs.",
+    "Low tumor/normal counts per section raise warnings per min_spots_per_group.",
+    "cna_bin and other evaluation-style columns are blocklisted from heuristic malignancy discovery (not continuous CNA)."
+  ],
+  "known_limitations": [],
+  "blockers_for_downstream_stages": [],
+  "stages_3_4_handoff": {
+    "canonical_malignancy_column": "cna_score",
+    "allowed_marginal_labels": [
+      "tumor",
+      "normal",
+      "intermediate"
+    ],
+    "intermediate_state_used": true,
+    "downstream_warning_semantics": "If malignancy_provenance is inferred_chromosomal_cna_from_expression or fallback_expression_program_hvg_proxy, downstream should note that training marginals are not true CNA and may be weakly supervised relative to gold-standard copy number."
+  },
+  "stage_2_extra": {
+    "live_run_output_dir": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run",
+    "n_sections": 2,
+    "cna_source": "fallback_expression_program_hvg_proxy",
+    "malignancy_provenance": "fallback_expression_program_hvg_proxy",
+    "decision_path": [
+      "no_existing_malignancy_column",
+      "expression_program_hvg_fallback"
+    ],
+    "warnings": [
+      "Used HVG expression-program malignancy proxy (data_exploration-style fallback, not curated program banks); n_hvg=800."
+    ]
+  },
+  "aliases_configured": [
+    "cna_score",
+    "malignancy_score",
+    "cna",
+    "malignancy"
+  ],
+  "score_column_blocklist": [
+    "cna_bin",
+    "layer",
+    "ivygap",
+    "org1",
+    "org2",
+    "mp"
+  ]
+}

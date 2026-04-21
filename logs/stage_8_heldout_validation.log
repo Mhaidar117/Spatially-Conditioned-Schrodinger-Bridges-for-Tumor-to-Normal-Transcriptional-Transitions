@@ -1,0 +1,80 @@
+2026-03-24 11:00:54,462 INFO Stage 8 held-out validation started
+2026-03-24 11:00:54,462 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-03-24 11:00:54,465 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_8_artifacts/stage_8_heldout_metrics.csv
+2026-03-24 11:06:45,017 INFO Stage 8 held-out validation started
+2026-03-24 11:06:45,017 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-03-24 11:06:45,019 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_8_artifacts/stage_8_heldout_metrics.csv
+2026-03-24 11:11:10,998 INFO Stage 8 held-out validation started
+2026-03-24 11:11:10,999 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-03-24 11:11:11,000 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_8_artifacts/stage_8_heldout_metrics.csv
+2026-03-24 11:31:06,692 INFO Stage 8 held-out validation started
+2026-03-24 11:31:06,692 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-03-24 11:31:06,694 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/tmp_stage8_test/stage_8_heldout_metrics.csv
+2026-03-24 11:38:07,028 INFO Stage 8 held-out validation started
+2026-03-24 11:38:07,028 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-03-24 11:38:07,030 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/tmp_stage8_test/stage_8_heldout_metrics.csv
+2026-03-24 11:38:07,030 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-03-24 11:47:08,952 INFO Stage 8 held-out validation started
+2026-03-24 11:47:08,952 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-03-24 11:47:09,547 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_8_heldout_metrics.csv
+2026-03-24 11:47:09,629 INFO Wrote Stage 8 figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_8_heldout_section_performance.png
+2026-03-24 11:47:09,629 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 08:03:54,707 INFO Stage 8 held-out validation started
+2026-04-12 08:03:54,707 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 08:03:54,708 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/tmp_stage8_test/stage_8_heldout_metrics.csv
+2026-04-12 08:03:54,709 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 08:07:15,746 INFO Stage 8 held-out validation started
+2026-04-12 08:07:15,746 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 08:07:15,748 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/tmp_stage8_test/stage_8_heldout_metrics.csv
+2026-04-12 08:07:15,748 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 08:14:59,761 INFO Stage 8 held-out validation started
+2026-04-12 08:14:59,761 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 08:15:00,587 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_8_heldout_metrics.csv
+2026-04-12 08:15:00,682 INFO Wrote Stage 8 figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_8_heldout_section_performance.png
+2026-04-12 08:15:00,684 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 08:19:43,135 INFO Stage 8 held-out validation started
+2026-04-12 08:19:43,135 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 08:19:43,137 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/tmp_stage8_test/stage_8_heldout_metrics.csv
+2026-04-12 08:19:43,137 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 08:20:11,751 INFO Stage 8 held-out validation started
+2026-04-12 08:20:11,752 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 08:20:12,306 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_8_heldout_metrics.csv
+2026-04-12 08:20:12,393 INFO Wrote Stage 8 figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_8_heldout_section_performance.png
+2026-04-12 08:20:12,394 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 09:08:19,685 INFO Stage 8 held-out validation started
+2026-04-12 09:08:19,685 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 09:08:20,337 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_8_heldout_metrics.csv
+2026-04-12 09:08:20,416 INFO Wrote Stage 8 figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_8_heldout_section_performance.png
+2026-04-12 09:08:20,417 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 09:40:19,012 INFO Stage 8 held-out validation started
+2026-04-12 09:40:19,012 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 09:40:19,748 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_8_heldout_metrics.csv
+2026-04-12 09:40:19,837 INFO Wrote Stage 8 figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_8_heldout_section_performance.png
+2026-04-12 09:40:19,838 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 18:15:11,059 INFO Stage 8 held-out validation started
+2026-04-12 18:15:11,060 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 18:15:12,498 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/stage_8_heldout_metrics.csv
+2026-04-12 18:15:12,621 INFO Wrote Stage 8 figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_8_heldout_section_performance.png
+2026-04-12 18:15:12,622 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-12 19:55:50,889 INFO Stage 8 held-out validation started
+2026-04-12 19:55:50,890 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-12 19:55:52,204 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/stage_8_heldout_metrics.csv
+2026-04-12 19:55:52,315 INFO Wrote Stage 8 figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_8_heldout_section_performance.png
+2026-04-12 19:55:52,316 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-17 11:45:02,893 INFO Stage 8 held-out validation started
+2026-04-17 11:45:02,893 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-17 11:45:02,895 INFO Wrote Stage 8 metrics: /sessions/sleepy-laughing-clarke/mnt/Spatial_Perturbations/results/tmp_stage8_test/stage_8_heldout_metrics.csv
+2026-04-17 11:45:02,896 INFO Wrote Stage 8 manifest: /sessions/sleepy-laughing-clarke/mnt/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-17 11:47:47,842 INFO Stage 8 held-out validation started
+2026-04-17 11:47:47,843 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-17 11:47:47,844 INFO Wrote Stage 8 metrics: /sessions/sleepy-laughing-clarke/mnt/Spatial_Perturbations/results/tmp_stage8_test/stage_8_heldout_metrics.csv
+2026-04-17 11:47:47,845 INFO Wrote Stage 8 manifest: /sessions/sleepy-laughing-clarke/mnt/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-17 11:53:23,409 INFO Stage 8 held-out validation started
+2026-04-17 11:53:23,409 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-17 11:53:23,411 INFO Wrote Stage 8 metrics: /sessions/sleepy-laughing-clarke/mnt/Spatial_Perturbations/results/tmp_stage8_test/stage_8_heldout_metrics.csv
+2026-04-17 11:53:23,412 INFO Wrote Stage 8 manifest: /sessions/sleepy-laughing-clarke/mnt/Spatial_Perturbations/logs/stage_8_artifacts.json
+2026-04-17 15:39:38,938 INFO Stage 8 held-out validation started
+2026-04-17 15:39:38,939 INFO Anti-leakage: split unit is section_id; no random spot split is used.
+2026-04-17 15:39:39,372 INFO Wrote Stage 8 metrics: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/stage_8_heldout_metrics.csv
+2026-04-17 15:39:39,471 INFO Wrote Stage 8 figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_8_heldout_section_performance.png
+2026-04-17 15:39:39,473 INFO Wrote Stage 8 manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_8_artifacts.json

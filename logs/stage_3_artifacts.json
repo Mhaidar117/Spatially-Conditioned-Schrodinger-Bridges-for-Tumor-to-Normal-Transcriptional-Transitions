@@ -1,0 +1,60 @@
+{
+  "graph_artifact_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_artifacts/knn_indices.npy",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_artifacts/neighbor_distances.npy"
+  ],
+  "context_artifact_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_artifacts/context_matrix.npy"
+  ],
+  "umap_figure_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_pre_context_section_id.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_context_enriched_section_id.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_neighborhood_diagnostics_mean_neighbor_distance.png"
+  ],
+  "hyperparameters": {
+    "k_neighbors": 8,
+    "x_column": "x",
+    "y_column": "y",
+    "section_column": "section_id",
+    "umap_random_state": 42
+  },
+  "test_script_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/tests/test_stage_3_spatial_context.py",
+  "known_limitations": [
+    "UMAPs use separate fits for pre-context vs context-enriched features (same hyperparameters and seed).",
+    "Synthetic fixture uses Poisson expression; real Visium runs optional below."
+  ],
+  "per_section_spot_counts": {
+    "sec_A": 38,
+    "sec_B": 20,
+    "sec_C": 1
+  },
+  "neighbor_distance_summary": {
+    "mean": 1.374999826557081,
+    "std": 0.3079660501988958,
+    "p50": 1.4785533905932737,
+    "p90": 1.839347080264858
+  },
+  "isolated_spot_indices": [
+    58
+  ],
+  "n_duplicate_coordinate_spots": 3,
+  "stage_4_handoff": {
+    "graph_format": "knn_indices: int64 array, shape (n_spots, k). knn_indices[i, j] is a global row index into expr/obs; all neighbors share section_id with spot i.",
+    "neighbor_distances": "float64 array, shape (n_spots, k); Euclidean (x,y) distances to each neighbor.",
+    "context_matrix": "float64, shape (n_spots, n_genes); row-wise mean of expr over knn_indices[i].",
+    "ordering": "Row i aligns with bundle.obs.iloc[i] and bundle.expr[i] (same as Stage 1 canonical order).",
+    "failure_modes_to_check_before_training": [
+      "NaN/inf in expr or coordinates (coordinates imputed with per-section median; see warnings in log).",
+      "Sections with fewer than k+1 spots: neighbors padded by repeating the farthest available neighbor.",
+      "Single-spot sections: all neighbors are self; mean context equals self expression.",
+      "Duplicate (x,y) within a section: kNN ties arbitrary among coincident spots.",
+      "If section_neighbor_purity < 1, graph construction is invalid \u2014 do not train."
+    ]
+  },
+  "optional_visium_umap_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_visium_subset_pre_context_section_id.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_visium_subset_context_enriched_section_id.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_3_figures/stage_3_umap_visium_subset_neighborhood_diagnostics_mean_neighbor_distance.png"
+  ],
+  "optional_visium_note": "Visium UMAPs use distinct filenames (variant visium_subset)."
+}

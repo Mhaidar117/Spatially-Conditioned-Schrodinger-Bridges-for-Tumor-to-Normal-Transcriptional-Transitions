@@ -1,0 +1,228 @@
+2026-03-22 15:34:29,927 INFO Stage 5 perturbation extraction validation (repo root: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations)
+2026-03-22 15:34:29,931 INFO Bridge config: {"ridge_lambda": 0.01, "transport_n_steps": 12, "reverse_step_size": 0.18}
+2026-03-22 15:34:29,937 INFO Inference entry point: omega_spatial.model.transport_states
+2026-03-22 15:34:29,937 INFO Observed shape (320, 48), transported (320, 48), perturbation (320, 48)
+2026-03-22 15:34:29,937 INFO Perturbation norm stats: {
+  "mean": 15.49438049898183,
+  "std": 2.796091744195593,
+  "min": 10.114412764696343,
+  "max": 23.099374032639407,
+  "median": 15.0071048261999,
+  "nan_count": 0,
+  "inf_count": 0
+}
+2026-03-22 15:34:29,938 INFO Class-specific norm summaries: {
+  "tumor": {
+    "n": 160,
+    "mean_perturbation_norm": 17.551689776134396,
+    "std_perturbation_norm": 2.2772011495119915
+  },
+  "normal": {
+    "n": 160,
+    "mean_perturbation_norm": 13.437071221829262,
+    "std_perturbation_norm": 1.409102581383884
+  }
+}
+2026-03-22 15:34:29,938 INFO NaN in perturbation: 0
+2026-03-22 15:34:29,938 INFO Inf in perturbation: 0
+2026-03-22 15:34:29,972 INFO Wrote artifact [expression_bundle_npz]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz
+2026-03-22 15:34:29,972 INFO Wrote artifact [gene_names_json]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_gene_names.json
+2026-03-22 15:34:29,972 INFO Wrote artifact [spot_summary_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv
+2026-03-22 15:34:29,972 INFO Wrote artifact [transported_expression_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv
+2026-03-22 15:34:29,972 INFO Wrote artifact [perturbation_matrix_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv
+2026-03-22 15:34:31,077 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png
+2026-03-22 15:34:31,189 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png
+2026-03-22 15:34:31,334 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png
+2026-03-22 15:34:31,335 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png
+2026-03-22 15:34:31,335 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png
+2026-03-22 15:34:31,335 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png
+2026-03-22 15:34:31,336 INFO Stages 6–7 handoff: {
+  "perturbation_matrix_paths": {
+    "npz_bundle": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz (arrays: observed, transported, perturbation)",
+    "csv_wide": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv",
+    "legacy_alias": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_vectors.csv (from annotated export)"
+  },
+  "transported_state_paths": {
+    "csv_wide": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv",
+    "npz": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz key 'transported'"
+  },
+  "annotated_outputs": {
+    "spot_table": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/annotated_output_obs.csv",
+    "h5ad": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/annotated_output.h5ad",
+    "spot_summary": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv"
+  },
+  "row_alignment": "Row i of perturbation_matrix.csv / bundle perturbation aligns with row i of bundle.obs at extraction time (same order as observed expression). Gene j aligns with var_names[j].",
+  "spots_included": "Perturbations are computed for **all spots**. Use obs['marginal_label'] (tumor / normal / intermediate) to restrict analyses; do not inject evaluation-only columns into transport.",
+  "safe_summary_columns_for_reporting": [
+    "perturbation_norm",
+    "marginal_label",
+    "section_id",
+    "cna_score",
+    "malignancy_score"
+  ]
+}
+2026-03-22 15:34:31,336 INFO Wrote manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_artifacts.json
+2026-03-22 15:34:31,337 INFO Produced artifacts: [
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_perturbation_extraction.log",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_artifacts.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_gene_names.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png"
+]
+2026-03-22 15:34:59,502 INFO Stage 5 perturbation extraction validation (repo root: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations)
+2026-03-22 15:34:59,506 INFO Bridge config: {"ridge_lambda": 0.01, "transport_n_steps": 12, "reverse_step_size": 0.18}
+2026-03-22 15:34:59,512 INFO Inference entry point: omega_spatial.model.transport_states
+2026-03-22 15:34:59,513 INFO Observed shape (320, 48), transported (320, 48), perturbation (320, 48)
+2026-03-22 15:34:59,513 INFO Perturbation norm stats: {
+  "mean": 15.49438049898183,
+  "std": 2.796091744195593,
+  "min": 10.114412764696343,
+  "max": 23.099374032639407,
+  "median": 15.0071048261999,
+  "nan_count": 0,
+  "inf_count": 0
+}
+2026-03-22 15:34:59,513 INFO Class-specific norm summaries: {
+  "tumor": {
+    "n": 160,
+    "mean_perturbation_norm": 17.551689776134396,
+    "std_perturbation_norm": 2.2772011495119915
+  },
+  "normal": {
+    "n": 160,
+    "mean_perturbation_norm": 13.437071221829262,
+    "std_perturbation_norm": 1.409102581383884
+  }
+}
+2026-03-22 15:34:59,514 INFO NaN in perturbation: 0
+2026-03-22 15:34:59,514 INFO Inf in perturbation: 0
+2026-03-22 15:34:59,548 INFO Wrote artifact [expression_bundle_npz]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz
+2026-03-22 15:34:59,548 INFO Wrote artifact [gene_names_json]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_gene_names.json
+2026-03-22 15:34:59,548 INFO Wrote artifact [spot_summary_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv
+2026-03-22 15:34:59,548 INFO Wrote artifact [transported_expression_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv
+2026-03-22 15:34:59,549 INFO Wrote artifact [perturbation_matrix_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv
+2026-03-22 15:35:00,641 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png
+2026-03-22 15:35:00,752 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png
+2026-03-22 15:35:00,896 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png
+2026-03-22 15:35:00,896 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png
+2026-03-22 15:35:00,896 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png
+2026-03-22 15:35:00,897 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png
+2026-03-22 15:35:00,897 INFO Stages 6–7 handoff: {
+  "perturbation_matrix_paths": {
+    "npz_bundle": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz (arrays: observed, transported, perturbation)",
+    "csv_wide": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv",
+    "legacy_alias": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_vectors.csv (from annotated export)"
+  },
+  "transported_state_paths": {
+    "csv_wide": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv",
+    "npz": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz key 'transported'"
+  },
+  "annotated_outputs": {
+    "spot_table": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/annotated_output_obs.csv",
+    "h5ad": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/annotated_output.h5ad",
+    "spot_summary": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv"
+  },
+  "row_alignment": "Row i of perturbation_matrix.csv / bundle perturbation aligns with row i of bundle.obs at extraction time (same order as observed expression). Gene j aligns with var_names[j].",
+  "spots_included": "Perturbations are computed for **all spots**. Use obs['marginal_label'] (tumor / normal / intermediate) to restrict analyses; do not inject evaluation-only columns into transport.",
+  "safe_summary_columns_for_reporting": [
+    "perturbation_norm",
+    "marginal_label",
+    "section_id",
+    "cna_score",
+    "malignancy_score"
+  ]
+}
+2026-03-22 15:35:00,898 INFO Wrote manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_artifacts.json
+2026-03-22 15:35:00,898 INFO Produced artifacts: [
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_perturbation_extraction.log",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_artifacts.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_gene_names.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png"
+]
+2026-03-22 15:35:14,672 INFO Stage 5 perturbation extraction validation (repo root: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations)
+2026-03-22 15:35:14,676 INFO Bridge config: {"ridge_lambda": 0.01, "transport_n_steps": 12, "reverse_step_size": 0.18}
+2026-03-22 15:35:14,681 INFO Inference entry point: omega_spatial.model.transport_states
+2026-03-22 15:35:14,681 INFO Observed shape (320, 48), transported (320, 48), perturbation (320, 48)
+2026-03-22 15:35:14,681 INFO Perturbation norm stats: {
+  "mean": 15.49438049898183,
+  "std": 2.796091744195593,
+  "min": 10.114412764696343,
+  "max": 23.099374032639407,
+  "median": 15.0071048261999,
+  "nan_count": 0,
+  "inf_count": 0
+}
+2026-03-22 15:35:14,682 INFO Class-specific norm summaries: {
+  "tumor": {
+    "n": 160,
+    "mean_perturbation_norm": 17.551689776134396,
+    "std_perturbation_norm": 2.2772011495119915
+  },
+  "normal": {
+    "n": 160,
+    "mean_perturbation_norm": 13.437071221829262,
+    "std_perturbation_norm": 1.409102581383884
+  }
+}
+2026-03-22 15:35:14,682 INFO NaN in perturbation: 0
+2026-03-22 15:35:14,682 INFO Inf in perturbation: 0
+2026-03-22 15:35:14,716 INFO Wrote artifact [expression_bundle_npz]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz
+2026-03-22 15:35:14,716 INFO Wrote artifact [gene_names_json]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_gene_names.json
+2026-03-22 15:35:14,716 INFO Wrote artifact [spot_summary_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv
+2026-03-22 15:35:14,716 INFO Wrote artifact [transported_expression_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv
+2026-03-22 15:35:14,716 INFO Wrote artifact [perturbation_matrix_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv
+2026-03-22 15:35:15,816 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png
+2026-03-22 15:35:15,931 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png
+2026-03-22 15:35:16,075 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png
+2026-03-22 15:35:16,075 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png
+2026-03-22 15:35:16,075 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png
+2026-03-22 15:35:16,076 INFO UMAP figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png
+2026-03-22 15:35:16,076 INFO Stages 6–7 handoff: {
+  "perturbation_matrix_paths": {
+    "npz_bundle": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz (arrays: observed, transported, perturbation)",
+    "csv_wide": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv",
+    "legacy_alias": "perturbation_vectors.csv (same matrix as perturbation_matrix.csv in pipeline runs)"
+  },
+  "transported_state_paths": {
+    "csv_wide": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv",
+    "npz": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz key 'transported'"
+  },
+  "annotated_outputs": {
+    "spot_summary": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv (perturbation_norm + marginal_label when present)",
+    "annotated_output_obs_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/annotated_output_obs.csv (from run_pipeline, same directory)",
+    "annotated_output_h5ad": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/annotated_output.h5ad (from run_pipeline when anndata is available)"
+  },
+  "row_alignment": "Row i of perturbation_matrix.csv / bundle perturbation aligns with row i of bundle.obs at extraction time (same order as observed expression). Gene j aligns with var_names[j].",
+  "spots_included": "Perturbations are computed for **all spots**. Use obs['marginal_label'] (tumor / normal / intermediate) to restrict analyses; do not inject evaluation-only columns into transport.",
+  "safe_summary_columns_for_reporting": [
+    "perturbation_norm",
+    "marginal_label",
+    "section_id",
+    "cna_score",
+    "malignancy_score"
+  ]
+}
+2026-03-22 15:35:16,076 INFO Wrote manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_artifacts.json
+2026-03-22 15:35:16,077 INFO Produced artifacts: [
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_perturbation_extraction.log",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_5_artifacts.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_gene_names.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png"
+]

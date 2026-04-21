@@ -1,0 +1,6 @@
+bridge:
+  backend: neural
+  neural_device: auto
+cna:
+  true_score_rds_path: Data/Inputs/CNA/mal_lev.rds
+  true_score_regions_path: Data/Inputs/CNA/samples_regions.txt

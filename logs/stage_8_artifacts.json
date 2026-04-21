@@ -1,0 +1,60 @@
+{
+  "stage": "stage_8_heldout_validation",
+  "status": "executed",
+  "split_strategy": {
+    "unit": "section_id",
+    "random_spot_split_used": false,
+    "split_seed": 7,
+    "holdout_fraction": 0.34,
+    "train_sections": [
+      "UKF243",
+      "UKF248",
+      "UKF259",
+      "UKF260",
+      "UKF266",
+      "UKF269",
+      "UKF275",
+      "UKF296",
+      "UKF304",
+      "ZH1007inf",
+      "ZH1007nec",
+      "ZH1019T1",
+      "ZH8811Bbulk",
+      "ZH881T1",
+      "ZH881inf",
+      "ZH916bulk",
+      "ZH916inf"
+    ],
+    "heldout_sections": [
+      "ZH1019inf",
+      "UKF255",
+      "UKF313",
+      "UKF251",
+      "ZH8811Abulk",
+      "UKF334",
+      "ZH8812bulk",
+      "MGH258",
+      "ZH916T1"
+    ]
+  },
+  "metrics_artifact_paths": {
+    "heldout_metrics_csv": "results/full_run_bayes/stage_8_heldout_metrics.csv"
+  },
+  "figure_paths": {
+    "heldout_section_performance_png": "results/full_run_bayes/figures/stage_8_heldout_section_performance.png"
+  },
+  "log_path": "logs/stage_8_heldout_validation.log",
+  "unresolved_validation_gaps": [],
+  "anti_leakage_notes": [
+    "No random spot splits were used for held-out claims.",
+    "Held-out split is section-level and isolated from internal metrics.",
+    "Evaluation labels are used post hoc only.",
+    "Backend comparisons use identical section splits and reference definitions."
+  ],
+  "caveats": [
+    "Held-out metrics are section-level internal cohort generalization, not external-cohort proof.",
+    "If few sections are available, held-out estimates have high variance."
+  ],
+  "test_script_path": "tests/test_stage_8_heldout_validation.py",
+  "artifact_manifest_path": "logs/stage_8_artifacts.json"
+}

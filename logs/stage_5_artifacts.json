@@ -1,0 +1,96 @@
+{
+  "output_directory": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts",
+  "transported_state_artifact_paths": {
+    "transported_expression_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv",
+    "expression_bundle_npz": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz",
+    "gene_names_json": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_gene_names.json"
+  },
+  "perturbation_artifact_paths": {
+    "perturbation_matrix_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv",
+    "expression_bundle_npz": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz"
+  },
+  "annotated_output_paths": {
+    "note": "This test run writes matrices under results/stage_5_artifacts/. run_pipeline() additionally writes annotated_output_obs.csv, perturbation_vectors.csv, and annotated_output.h5ad under cfg.output_path."
+  },
+  "umap_figure_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_observed_marginal_labels.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_transported_marginal_labels.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_figures/stage_5_umap_perturbation_norm.png"
+  ],
+  "test_script_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/tests/test_stage_5_perturbation_extraction.py",
+  "known_limitations": [
+    "Perturbations are computed for all spots; restrict with marginal_label for tumor-only analyses.",
+    "Toy fixture uses Poisson-like counts; real Visium may need QC and transport hyperparameter tuning.",
+    "Linear ridge bridge (Stage 4) is not a full generative or optimal-transport counterfactual model."
+  ],
+  "handoff_contract": {
+    "perturbation_matrix_paths": {
+      "npz_bundle": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz (arrays: observed, transported, perturbation)",
+      "csv_wide": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/perturbation_matrix.csv",
+      "legacy_alias": "perturbation_vectors.csv (same matrix as perturbation_matrix.csv in pipeline runs)"
+    },
+    "transported_state_paths": {
+      "csv_wide": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/transported_expression.csv",
+      "npz": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_expression_bundle.npz key 'transported'"
+    },
+    "annotated_outputs": {
+      "spot_summary": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/stage_5_spot_summary.csv (perturbation_norm + marginal_label when present)",
+      "annotated_output_obs_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/annotated_output_obs.csv (from run_pipeline, same directory)",
+      "annotated_output_h5ad": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_5_artifacts/annotated_output.h5ad (from run_pipeline when anndata is available)"
+    },
+    "row_alignment": "Row i of perturbation_matrix.csv / bundle perturbation aligns with row i of bundle.obs at extraction time (same order as observed expression). Gene j aligns with var_names[j].",
+    "spots_included": "Perturbations are computed for **all spots**. Use obs['marginal_label'] (tumor / normal / intermediate) to restrict analyses; do not inject evaluation-only columns into transport.",
+    "safe_summary_columns_for_reporting": [
+      "perturbation_norm",
+      "marginal_label",
+      "section_id",
+      "cna_score",
+      "malignancy_score"
+    ]
+  },
+  "perturbation_identity": "perturbation = transported_state - observed_state",
+  "transport_sanity_metrics": {
+    "all_spots": {
+      "mean_dist_pre": 26.574946268570862,
+      "mean_dist_post": 12.46638317147249,
+      "mean_delta_toward_ref": 14.108563097098372
+    },
+    "label_tumor": {
+      "n": 160,
+      "mean_dist_pre": 31.163857678406725,
+      "mean_dist_post": 14.715483987098207,
+      "mean_delta_toward_ref": 16.448373691308518
+    },
+    "label_normal": {
+      "n": 160,
+      "mean_dist_pre": 21.986034858734996,
+      "mean_dist_post": 10.21728235584677,
+      "mean_delta_toward_ref": 11.768752502888224
+    }
+  },
+  "diagnostics": {
+    "perturbation_norm_stats": {
+      "mean": 15.49438049898183,
+      "std": 2.796091744195593,
+      "min": 10.114412764696343,
+      "max": 23.099374032639407,
+      "median": 15.0071048261999,
+      "nan_count": 0,
+      "inf_count": 0
+    },
+    "class_perturbation_norm_summaries": {
+      "tumor": {
+        "n": 160,
+        "mean_perturbation_norm": 17.551689776134396,
+        "std_perturbation_norm": 2.2772011495119915
+      },
+      "normal": {
+        "n": 160,
+        "mean_perturbation_norm": 13.437071221829262,
+        "std_perturbation_norm": 1.409102581383884
+      }
+    }
+  },
+  "umap_random_state": 42,
+  "pipeline_run": false
+}

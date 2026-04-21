@@ -1,0 +1,89 @@
+{
+  "metrics_artifact_paths": {
+    "benchmark_metrics_csv": "results/full_run_bayes/benchmark_metrics.csv",
+    "spatial_coherence_csv": "results/full_run_bayes/stage_7_spatial_coherence.csv",
+    "biological_plausibility_csv": "results/full_run_bayes/stage_7_biological_plausibility.csv"
+  },
+  "figures_directory": "results/full_run_bayes/figures",
+  "report_paths": {
+    "report_html": "results/full_run_bayes/report.html",
+    "report_pdf": "results/full_run_bayes/report.pdf"
+  },
+  "umap_figure_paths": [
+    "results/full_run_bayes/figures/stage_7_umap_stage_progression.png",
+    "results/full_run_bayes/figures/stage_7_umap_baseline_comparison.png",
+    "results/full_run_bayes/figures/stage_7_umap_benchmark_variables.png"
+  ],
+  "summary_figure_paths": [
+    "results/full_run_bayes/figures/stage_7_validation_summary.png",
+    "results/full_run_bayes/figures/stage_7_stage4b_transport_comparison.png"
+  ],
+  "test_script_path": "tests/test_stage_7_reporting_benchmarking.py",
+  "unresolved_validation_gaps": [],
+  "baselines_executed": [
+    "SpatialBridge",
+    "StaticOT_centroid",
+    "UnconditionalBridge",
+    "DE_shift",
+    "LatentNN_normal_blend",
+    "SpatialBridge_linear"
+  ],
+  "transport_backend_selected": "bayesian_linear",
+  "transport_backend_comparison_available": false,
+  "validation_streams": {
+    "synthetic_validation": "executed",
+    "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+    "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+    "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+    "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+    "st_codex_cross_modal": "optional_not_run",
+    "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+  },
+  "synthetic_validation": {
+    "available": true,
+    "artifact_manifest_path": "results/synthetic_validation/synthetic_validation_manifest.json",
+    "summary_metrics": {
+      "mean_gene_cosine_similarity": 0.5733647253821101,
+      "median_gene_cosine_similarity": 0.7000424699293302,
+      "mean_gene_l2_error": 1.1821423401956928,
+      "median_gene_l2_error": 0.6173437990357065,
+      "mean_directional_cosine_xy": 0.5868055555555556,
+      "fraction_positive_inward_direction": 0.5868055555555556,
+      "recovery_strength_correlation": 0.9980900048622047,
+      "malignancy_vs_inferred_strength_correlation": 0.9971711397778745,
+      "mean_pre_distance_to_healthy": 1.7010123989642498,
+      "mean_post_distance_to_healthy": 1.1821423401956928,
+      "mean_delta_toward_healthy": 0.5188700587685571
+    },
+    "figure_paths": {
+      "synthetic_malignancy_gradient_png": "results/synthetic_validation/figures/synthetic_malignancy_gradient.png",
+      "synthetic_program_composition_png": "results/synthetic_validation/figures/synthetic_program_composition.png",
+      "synthetic_recovery_analysis_png": "results/synthetic_validation/figures/synthetic_recovery_analysis.png",
+      "synthetic_metric_summary_png": "results/synthetic_validation/figures/synthetic_metric_summary.png",
+      "synthetic_post_transport_residual_png": "results/synthetic_validation/figures/synthetic_post_transport_residual.png",
+      "synthetic_ablation_spatial_vs_nonspatial_png": "results/synthetic_validation/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+    }
+  },
+  "stage4b_gain_attribution_paths": {},
+  "coordinator_handoff": {
+    "baselines": [
+      "SpatialBridge (model transport)",
+      "StaticOT_centroid (global mean re-centering toward normal reference)",
+      "UnconditionalBridge (fixed blend toward normal)",
+      "DE_shift (tumor bulk shift toward normal mean)",
+      "LatentNN_normal_blend (expression kNN among normal spots)"
+    ],
+    "caveats": [
+      "Section-macro metrics aggregate within-run sections; they do not constitute held-out generalization.",
+      "layer, mp, ivygap, org1, org2, cc, CODEX are evaluation-only when present; do not treat as training signals.",
+      "Distance-to-normal is an internal plausibility probe, not a clinical endpoint.",
+      "Stage 4b gain-attribution analyses are associative and should not be interpreted as causal pathway interventions."
+    ],
+    "key_outputs": [
+      "results/full_run_bayes/benchmark_metrics.csv",
+      "results/full_run_bayes/stage_7_spatial_coherence.csv",
+      "results/full_run_bayes/stage_7_biological_plausibility.csv"
+    ]
+  },
+  "artifact_manifest_path": "logs/stage_7_artifacts.json"
+}

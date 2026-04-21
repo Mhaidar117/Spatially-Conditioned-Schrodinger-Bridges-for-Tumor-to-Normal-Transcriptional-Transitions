@@ -1,0 +1,880 @@
+2026-03-22 15:44:32,776 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:44:32,776 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:44:32,777 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-03-22 15:44:32,778 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-03-22 15:44:32,778 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-03-22 15:44:33,093 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:44:33,356 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:44:33,579 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:44:33,580 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:44:33,580 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:44:33,580 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-14/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:44:33,580 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-22 15:44:33,581 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 15:44:37,280 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:44:37,281 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:44:37,281 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/stage_7_spatial_coherence.csv
+2026-03-22 15:44:37,282 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/stage_7_biological_plausibility.csv
+2026-03-22 15:44:37,282 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/benchmark_metrics.csv
+2026-03-22 15:44:37,604 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:44:37,864 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:44:38,094 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:44:38,094 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:44:38,094 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:44:38,095 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/stage7_manual_23a4r5pz/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:44:38,095 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-22 15:44:38,095 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 15:54:50,450 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:54:50,450 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:54:50,451 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_spatial_coherence.csv
+2026-03-22 15:54:50,451 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_biological_plausibility.csv
+2026-03-22 15:54:50,452 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/benchmark_metrics.csv
+2026-03-22 15:54:50,764 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:54:51,020 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:54:51,253 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:54:51,253 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:54:51,253 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:54:51,253 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:54:51,254 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-22 15:54:51,254 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 15:54:56,968 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:54:56,968 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:54:56,969 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_spatial_coherence.csv
+2026-03-22 15:54:56,970 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_biological_plausibility.csv
+2026-03-22 15:54:56,970 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/benchmark_metrics.csv
+2026-03-22 15:54:57,284 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:54:57,539 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:54:57,775 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:54:57,775 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:54:57,775 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:54:57,775 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:54:57,776 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-22 15:54:57,776 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 15:54:58,942 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:54:58,942 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:54:58,943 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-03-22 15:54:58,944 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-03-22 15:54:58,944 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-03-22 15:54:59,255 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:54:59,507 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:54:59,727 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:54:59,727 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:54:59,728 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:54:59,728 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-15/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:54:59,729 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-22 15:54:59,729 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 15:55:14,923 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:55:14,924 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:55:14,925 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-03-22 15:55:14,926 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-03-22 15:55:14,926 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-03-22 15:55:15,246 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:55:15,505 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:55:15,729 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:55:15,730 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:55:15,730 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:55:15,730 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:55:15,731 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-16/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-03-22 15:55:15,731 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 15:55:16,978 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:55:16,978 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:55:16,979 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_spatial_coherence.csv
+2026-03-22 15:55:16,980 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_biological_plausibility.csv
+2026-03-22 15:55:16,980 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/benchmark_metrics.csv
+2026-03-22 15:55:17,297 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:55:17,555 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:55:17,779 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:55:17,780 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:55:17,780 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:55:17,780 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:55:17,781 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-22 15:55:17,781 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 15:55:24,853 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:55:24,854 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:55:24,855 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-03-22 15:55:24,856 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-03-22 15:55:24,856 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-03-22 15:55:25,174 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:55:25,437 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:55:25,661 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:55:25,661 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:55:25,661 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:55:25,661 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:55:25,662 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-17/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-03-22 15:55:25,663 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 15:56:38,316 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 15:56:38,316 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 15:56:38,317 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_spatial_coherence.csv
+2026-03-22 15:56:38,318 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_biological_plausibility.csv
+2026-03-22 15:56:38,318 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/benchmark_metrics.csv
+2026-03-22 15:56:38,630 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:56:38,890 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:56:39,114 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:56:39,114 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-22 15:56:39,114 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 15:56:39,114 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 15:56:39,115 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-22 15:56:39,115 INFO Stage 7 complete; unresolved gaps: none
+2026-03-22 16:00:50,144 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-22 16:00:50,145 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-22 16:00:50,145 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-03-22 16:00:50,146 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-03-22 16:00:50,146 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-03-22 16:00:50,457 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 16:00:50,712 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 16:00:50,935 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 16:00:50,935 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-03-22 16:00:50,935 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-03-22 16:00:50,935 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-03-22 16:00:50,936 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-18/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-03-22 16:00:50,936 INFO Stage 7 complete; unresolved gaps: none
+2026-03-23 23:16:42,727 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-23 23:16:42,727 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-23 23:16:44,106 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_spatial_coherence.csv
+2026-03-23 23:16:45,339 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/stage_7_biological_plausibility.csv
+2026-03-23 23:16:45,339 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/benchmark_metrics.csv
+2026-03-23 23:16:51,145 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-23 23:17:02,108 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-23 23:17:03,292 ERROR Stage 7 benchmark-variable UMAP failed: '<' not supported between instances of 'float' and 'str'
+Traceback (most recent call last):
+  File "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/omega_spatial/reporting.py", line 534, in run_stage7_reporting
+    extra_paths, bench_warns = write_stage7_umap_benchmark_variables(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        expr, perturb, obs, fig_dir, logger, random_state=rs + 30
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/omega_spatial/reporting.py", line 313, in write_stage7_umap_benchmark_variables
+    uniq = sorted(set(s.tolist()))
+TypeError: '<' not supported between instances of 'float' and 'str'
+2026-03-23 23:17:03,380 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_validation_summary.png
+2026-03-23 23:17:03,380 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png
+2026-03-23 23:17:03,380 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png
+2026-03-23 23:17:03,381 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-23 23:17:03,381 INFO Stage 7 complete; unresolved gaps: ["benchmark_variables_umap_failed:'<' not supported between instances of 'float' and 'str'"]
+2026-03-24 11:46:51,807 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-03-24 11:46:51,808 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-03-24 11:46:51,928 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_spatial_coherence.csv
+2026-03-24 11:46:51,948 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_biological_plausibility.csv
+2026-03-24 11:46:51,948 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/benchmark_metrics.csv
+2026-03-24 11:46:56,472 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-03-24 11:47:07,717 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-03-24 11:47:08,860 ERROR Stage 7 benchmark-variable UMAP failed: '<' not supported between instances of 'float' and 'str'
+Traceback (most recent call last):
+  File "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/omega_spatial/reporting.py", line 534, in run_stage7_reporting
+    extra_paths, bench_warns = write_stage7_umap_benchmark_variables(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        expr, perturb, obs, fig_dir, logger, random_state=rs + 30
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/omega_spatial/reporting.py", line 313, in write_stage7_umap_benchmark_variables
+    uniq = sorted(set(s.tolist()))
+TypeError: '<' not supported between instances of 'float' and 'str'
+2026-03-24 11:47:08,946 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_validation_summary.png
+2026-03-24 11:47:08,946 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-03-24 11:47:08,946 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-03-24 11:47:08,947 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-03-24 11:47:08,947 INFO Stage 7 complete; unresolved gaps: ["benchmark_variables_umap_failed:'<' not supported between instances of 'float' and 'str'"]
+2026-04-12 08:03:53,677 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 08:03:53,678 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 08:03:53,679 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-12 08:03:53,680 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-12 08:03:53,680 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-12 08:03:53,977 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:03:54,230 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:03:54,452 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:03:54,535 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-12 08:03:54,535 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:03:54,535 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:03:54,535 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:03:54,537 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-0/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-12 08:03:54,537 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 08:05:53,730 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 08:05:53,731 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 08:05:53,732 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-12 08:05:53,733 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-12 08:05:53,733 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-12 08:05:54,052 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:05:54,322 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:05:54,559 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:05:54,650 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-12 08:05:54,650 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:05:54,650 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:05:54,650 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:05:54,651 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-4/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-12 08:05:54,652 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 08:06:09,063 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 08:06:09,063 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 08:06:09,064 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-12 08:06:09,065 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-12 08:06:09,065 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-12 08:06:09,383 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:06:09,647 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:06:09,882 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:06:09,976 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-12 08:06:09,976 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:06:09,976 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:06:09,977 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:06:09,978 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-5/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-12 08:06:09,978 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 08:14:36,211 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 08:14:36,212 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 08:14:36,647 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_spatial_coherence.csv
+2026-04-12 08:14:36,669 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_biological_plausibility.csv
+2026-04-12 08:14:36,670 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/benchmark_metrics.csv
+2026-04-12 08:14:42,225 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:14:56,484 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:14:59,661 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:14:59,753 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_validation_summary.png
+2026-04-12 08:14:59,754 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:14:59,754 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:14:59,754 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:14:59,756 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-04-12 08:14:59,757 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 08:19:42,089 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 08:19:42,090 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 08:19:42,091 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-12 08:19:42,092 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-12 08:19:42,092 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-12 08:19:42,412 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:19:42,692 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:19:42,948 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:19:43,046 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-12 08:19:43,046 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:19:43,046 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:19:43,046 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:19:43,048 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-8/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-12 08:19:43,048 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 08:19:52,507 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 08:19:52,508 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 08:19:52,851 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_spatial_coherence.csv
+2026-04-12 08:19:52,873 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_biological_plausibility.csv
+2026-04-12 08:19:52,873 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/benchmark_metrics.csv
+2026-04-12 08:19:58,584 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:20:09,045 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:20:11,651 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:20:11,745 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_validation_summary.png
+2026-04-12 08:20:11,746 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-04-12 08:20:11,746 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 08:20:11,746 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 08:20:11,748 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-04-12 08:20:11,748 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 08:59:27,401 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 08:59:27,401 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 08:59:27,516 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_spatial_coherence.csv
+2026-04-12 08:59:27,538 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_biological_plausibility.csv
+2026-04-12 08:59:27,538 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/benchmark_metrics.csv
+2026-04-12 09:00:13,044 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 09:00:13,045 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 09:00:13,046 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-12 09:00:13,046 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-12 09:00:13,047 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-12 09:00:13,698 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:00:14,512 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:00:14,857 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:00:14,954 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-12 09:00:14,954 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:00:14,954 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:00:14,954 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:00:14,956 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-9/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-12 09:00:14,956 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 09:02:09,477 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:04:04,953 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 09:04:04,953 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 09:04:04,955 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-12 09:04:04,956 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-12 09:04:04,956 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-12 09:04:13,468 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:04:14,193 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:04:14,548 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:04:14,646 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-12 09:04:14,647 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:04:14,647 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:04:14,647 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:04:14,649 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-10/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-12 09:04:14,649 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 09:07:41,325 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:08:19,595 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:08:19,680 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_validation_summary.png
+2026-04-12 09:08:19,680 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:08:19,680 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:08:19,680 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:08:19,681 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-04-12 09:08:19,682 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 09:19:17,062 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 09:19:17,063 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 09:19:17,064 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-12 09:19:17,064 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-12 09:19:17,064 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-12 09:19:24,160 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:19:24,800 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:19:25,143 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:19:25,229 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-12 09:19:25,229 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:19:25,229 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:19:25,229 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:19:25,231 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-11/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-12 09:19:25,231 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 09:31:38,537 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run"
+}
+2026-04-12 09:31:38,539 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-12 09:31:38,661 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_spatial_coherence.csv
+2026-04-12 09:31:38,683 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/stage_7_biological_plausibility.csv
+2026-04-12 09:31:38,684 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/benchmark_metrics.csv
+2026-04-12 09:34:15,984 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:39:40,288 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:40:18,919 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:40:19,004 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_validation_summary.png
+2026-04-12 09:40:19,005 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_stage_progression.png
+2026-04-12 09:40:19,005 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 09:40:19,005 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 09:40:19,007 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-04-12 09:40:19,007 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 17:59:01,420 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-12 17:59:01,421 INFO Stage 7 selected transport backend: neural
+2026-04-12 17:59:01,421 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend', 'SpatialBridge_neural', 'SpatialBridge_linear']
+2026-04-12 17:59:01,550 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/stage_7_spatial_coherence.csv
+2026-04-12 17:59:01,572 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/stage_7_biological_plausibility.csv
+2026-04-12 17:59:01,572 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/benchmark_metrics.csv
+2026-04-12 18:01:41,134 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_umap_stage_progression.png
+2026-04-12 18:14:10,902 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 18:14:58,880 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 18:14:58,998 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_validation_summary.png
+2026-04-12 18:15:10,705 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_stage4b_transport_comparison.png
+2026-04-12 18:15:10,984 INFO Stage 7 attribution table: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/stage_7_stage4b_program_gain_attribution.csv
+2026-04-12 18:15:11,045 INFO Stage 7 attribution figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_stage4b_program_gain_attribution.png
+2026-04-12 18:15:11,046 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_umap_stage_progression.png
+2026-04-12 18:15:11,046 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 18:15:11,046 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 18:15:11,051 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-04-12 18:15:11,051 INFO Stage 7 complete; unresolved gaps: none
+2026-04-12 19:42:46,200 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-12 19:42:46,202 INFO Stage 7 selected transport backend: neural
+2026-04-12 19:42:46,202 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend', 'SpatialBridge_neural', 'SpatialBridge_linear']
+2026-04-12 19:42:46,317 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/stage_7_spatial_coherence.csv
+2026-04-12 19:42:46,336 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/stage_7_biological_plausibility.csv
+2026-04-12 19:42:46,336 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/benchmark_metrics.csv
+2026-04-12 19:45:15,515 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_umap_stage_progression.png
+2026-04-12 19:54:56,101 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 19:55:35,759 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 19:55:35,868 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_validation_summary.png
+2026-04-12 19:55:50,508 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_stage4b_transport_comparison.png
+2026-04-12 19:55:50,789 INFO Stage 7 attribution table: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/stage_7_stage4b_program_gain_attribution.csv
+2026-04-12 19:55:50,847 INFO Stage 7 attribution figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_stage4b_program_gain_attribution.png
+2026-04-12 19:55:50,847 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_umap_stage_progression.png
+2026-04-12 19:55:50,847 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_umap_baseline_comparison.png
+2026-04-12 19:55:50,848 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_stage4b_tuned/figures/stage_7_umap_benchmark_variables.png
+2026-04-12 19:55:50,852 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-04-12 19:55:50,852 INFO Stage 7 complete; unresolved gaps: none
+2026-04-16 15:52:15,474 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-16 15:52:15,475 INFO Stage 7 selected transport backend: linear
+2026-04-16 15:52:15,475 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend', 'SpatialBridge_linear', 'SpatialBridge_neural']
+2026-04-16 15:52:15,476 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-16 15:52:15,477 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-16 15:52:15,477 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-16 15:52:22,219 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-16 15:52:23,160 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-16 15:52:23,479 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-16 15:52:23,577 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-16 15:52:23,645 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-16 15:52:23,647 INFO Stage 7 attribution table: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/stage_7_stage4b_program_gain_attribution.csv
+2026-04-16 15:52:23,694 INFO Stage 7 attribution figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_program_gain_attribution.png
+2026-04-16 15:52:23,695 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-16 15:52:23,695 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-16 15:52:23,695 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-16 15:52:23,696 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-16 15:52:23,696 INFO Stage 7 complete; unresolved gaps: none
+2026-04-16 15:52:24,577 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-16 15:52:24,578 INFO Stage 7 selected transport backend: linear
+2026-04-16 15:52:24,578 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-16 15:52:24,579 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-16 15:52:24,580 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-16 15:52:24,580 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/benchmark_metrics.csv
+2026-04-16 15:52:24,581 INFO Loaded synthetic validation artifacts: {
+  "manifest": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 100
+}
+2026-04-16 15:52:25,297 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-16 15:52:25,298 WARNING Stage 7: missing baseline key SpatialBridge_linear (omitted from comparison UMAP)
+2026-04-16 15:52:25,298 WARNING Stage 7: missing baseline key SpatialBridge_neural (omitted from comparison UMAP)
+2026-04-16 15:52:25,968 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-16 15:52:26,286 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-16 15:52:26,369 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-16 15:52:26,432 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-16 15:52:26,432 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-16 15:52:26,432 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-16 15:52:26,432 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-16 15:52:26,434 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_run_stage7_includes_synth0/stage7_manifest.json
+2026-04-16 15:52:26,434 INFO Stage 7 complete; unresolved gaps: none
+2026-04-16 15:53:16,041 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-16 15:53:16,041 INFO Stage 7 selected transport backend: linear
+2026-04-16 15:53:16,041 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend', 'SpatialBridge_linear', 'SpatialBridge_neural']
+2026-04-16 15:53:16,042 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-16 15:53:16,043 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-16 15:53:16,043 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-16 15:53:16,045 INFO Loaded synthetic validation artifacts: {
+  "manifest": "results/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 576
+}
+2026-04-16 15:53:22,208 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-16 15:53:23,167 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-16 15:53:23,484 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-16 15:53:23,582 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-16 15:53:23,654 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-16 15:53:23,656 INFO Stage 7 attribution table: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/stage_7_stage4b_program_gain_attribution.csv
+2026-04-16 15:53:23,704 INFO Stage 7 attribution figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_program_gain_attribution.png
+2026-04-16 15:53:23,704 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-16 15:53:23,704 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-16 15:53:23,705 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-16 15:53:23,706 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-16 15:53:23,706 INFO Stage 7 complete; unresolved gaps: none
+2026-04-16 15:53:24,583 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-16 15:53:24,583 INFO Stage 7 selected transport backend: linear
+2026-04-16 15:53:24,584 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-16 15:53:24,584 INFO Wrote spatial coherence summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-16 15:53:24,585 INFO Wrote biological plausibility summary: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-16 15:53:24,585 INFO Benchmark metrics path (pipeline): /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/benchmark_metrics.csv
+2026-04-16 15:53:24,586 INFO Loaded synthetic validation artifacts: {
+  "manifest": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 100
+}
+2026-04-16 15:53:25,314 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-16 15:53:25,314 WARNING Stage 7: missing baseline key SpatialBridge_linear (omitted from comparison UMAP)
+2026-04-16 15:53:25,315 WARNING Stage 7: missing baseline key SpatialBridge_neural (omitted from comparison UMAP)
+2026-04-16 15:53:25,970 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-16 15:53:26,287 INFO Stage 7 UMAP artifact: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-16 15:53:26,369 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-16 15:53:26,430 INFO Stage 7 summary figure: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-16 15:53:26,430 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-16 15:53:26,431 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-16 15:53:26,431 INFO Stage 7 UMAP output path: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-16 15:53:26,432 INFO Wrote artifact manifest: /private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_run_stage7_includes_synth0/stage7_manifest.json
+2026-04-16 15:53:26,432 INFO Stage 7 complete; unresolved gaps: none
+2026-04-17 11:44:58,411 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-17 11:44:58,412 INFO Stage 7 selected transport backend: linear
+2026-04-17 11:44:58,412 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend', 'SpatialBridge_linear', 'SpatialBridge_neural']
+2026-04-17 11:44:58,413 INFO Wrote spatial coherence summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-17 11:44:58,413 INFO Wrote biological plausibility summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-17 11:44:58,414 INFO Benchmark metrics path (pipeline): /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-17 11:44:58,417 INFO Loaded synthetic validation artifacts: {
+  "manifest": "results/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 576
+}
+2026-04-17 11:44:58,820 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:44:59,349 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:44:59,692 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:44:59,827 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-17 11:44:59,919 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-17 11:44:59,922 INFO Stage 7 attribution table: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/stage_7_stage4b_program_gain_attribution.csv
+2026-04-17 11:44:59,991 INFO Stage 7 attribution figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_program_gain_attribution.png
+2026-04-17 11:44:59,991 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:44:59,991 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:44:59,992 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:44:59,993 INFO Wrote artifact manifest: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-17 11:44:59,993 INFO Stage 7 complete; unresolved gaps: none
+2026-04-17 11:45:01,522 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-17 11:45:01,524 INFO Stage 7 selected transport backend: linear
+2026-04-17 11:45:01,524 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-17 11:45:01,525 INFO Wrote spatial coherence summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-17 11:45:01,526 INFO Wrote biological plausibility summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-17 11:45:01,526 INFO Benchmark metrics path (pipeline): /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/benchmark_metrics.csv
+2026-04-17 11:45:01,527 INFO Loaded synthetic validation artifacts: {
+  "manifest": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 100
+}
+2026-04-17 11:45:01,923 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:45:01,923 WARNING Stage 7: missing baseline key SpatialBridge_linear (omitted from comparison UMAP)
+2026-04-17 11:45:01,924 WARNING Stage 7: missing baseline key SpatialBridge_neural (omitted from comparison UMAP)
+2026-04-17 11:45:02,280 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:45:02,626 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:45:02,799 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-17 11:45:02,886 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-17 11:45:02,886 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:45:02,887 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:45:02,887 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:45:02,888 INFO Wrote artifact manifest: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_run_stage7_includes_synth0/stage7_manifest.json
+2026-04-17 11:45:02,888 INFO Stage 7 complete; unresolved gaps: none
+2026-04-17 11:47:43,492 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-17 11:47:43,492 INFO Stage 7 selected transport backend: linear
+2026-04-17 11:47:43,492 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend', 'SpatialBridge_linear', 'SpatialBridge_neural']
+2026-04-17 11:47:43,493 INFO Wrote spatial coherence summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-17 11:47:43,494 INFO Wrote biological plausibility summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-17 11:47:43,494 INFO Benchmark metrics path (pipeline): /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-17 11:47:43,498 INFO Loaded synthetic validation artifacts: {
+  "manifest": "results/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 576
+}
+2026-04-17 11:47:43,923 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:47:44,402 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:47:44,735 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:47:44,872 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-17 11:47:44,964 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-17 11:47:44,967 INFO Stage 7 attribution table: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/stage_7_stage4b_program_gain_attribution.csv
+2026-04-17 11:47:45,037 INFO Stage 7 attribution figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_program_gain_attribution.png
+2026-04-17 11:47:45,037 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:47:45,037 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:47:45,038 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:47:45,039 INFO Wrote artifact manifest: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-17 11:47:45,039 INFO Stage 7 complete; unresolved gaps: none
+2026-04-17 11:47:46,485 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-17 11:47:46,486 INFO Stage 7 selected transport backend: linear
+2026-04-17 11:47:46,486 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-17 11:47:46,487 INFO Wrote spatial coherence summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-17 11:47:46,487 INFO Wrote biological plausibility summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-17 11:47:46,488 INFO Benchmark metrics path (pipeline): /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/benchmark_metrics.csv
+2026-04-17 11:47:46,489 INFO Loaded synthetic validation artifacts: {
+  "manifest": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 100
+}
+2026-04-17 11:47:46,888 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:47:46,889 WARNING Stage 7: missing baseline key SpatialBridge_linear (omitted from comparison UMAP)
+2026-04-17 11:47:46,889 WARNING Stage 7: missing baseline key SpatialBridge_neural (omitted from comparison UMAP)
+2026-04-17 11:47:47,287 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:47:47,618 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:47:47,745 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-17 11:47:47,835 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-17 11:47:47,836 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:47:47,836 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:47:47,836 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:47:47,837 INFO Wrote artifact manifest: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_run_stage7_includes_synth0/stage7_manifest.json
+2026-04-17 11:47:47,838 INFO Stage 7 complete; unresolved gaps: none
+2026-04-17 11:53:19,018 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-17 11:53:19,020 INFO Stage 7 selected transport backend: linear
+2026-04-17 11:53:19,020 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend', 'SpatialBridge_linear', 'SpatialBridge_neural']
+2026-04-17 11:53:19,021 INFO Wrote spatial coherence summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-17 11:53:19,022 INFO Wrote biological plausibility summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-17 11:53:19,022 INFO Benchmark metrics path (pipeline): /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/benchmark_metrics.csv
+2026-04-17 11:53:19,025 INFO Loaded synthetic validation artifacts: {
+  "manifest": "results/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 576
+}
+2026-04-17 11:53:19,459 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:53:19,938 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:53:20,267 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:53:20,405 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-17 11:53:20,499 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-17 11:53:20,501 INFO Stage 7 attribution table: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/stage_7_stage4b_program_gain_attribution.csv
+2026-04-17 11:53:20,574 INFO Stage 7 attribution figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_stage4b_program_gain_attribution.png
+2026-04-17 11:53:20,574 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:53:20,574 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:53:20,575 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:53:20,576 INFO Wrote artifact manifest: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_produces_umaps0/stage_7_artifacts.json
+2026-04-17 11:53:20,576 INFO Stage 7 complete; unresolved gaps: none
+2026-04-17 11:53:22,047 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-17 11:53:22,048 INFO Stage 7 selected transport backend: linear
+2026-04-17 11:53:22,048 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend']
+2026-04-17 11:53:22,049 INFO Wrote spatial coherence summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/stage_7_spatial_coherence.csv
+2026-04-17 11:53:22,050 INFO Wrote biological plausibility summary: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/stage_7_biological_plausibility.csv
+2026-04-17 11:53:22,050 INFO Benchmark metrics path (pipeline): /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/benchmark_metrics.csv
+2026-04-17 11:53:22,051 INFO Loaded synthetic validation artifacts: {
+  "manifest": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 100
+}
+2026-04-17 11:53:22,446 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:53:22,446 WARNING Stage 7: missing baseline key SpatialBridge_linear (omitted from comparison UMAP)
+2026-04-17 11:53:22,447 WARNING Stage 7: missing baseline key SpatialBridge_neural (omitted from comparison UMAP)
+2026-04-17 11:53:22,851 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:53:23,187 INFO Stage 7 UMAP artifact: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:53:23,314 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_validation_summary.png
+2026-04-17 11:53:23,402 INFO Stage 7 summary figure: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_stage4b_transport_comparison.png
+2026-04-17 11:53:23,403 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_stage_progression.png
+2026-04-17 11:53:23,403 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 11:53:23,403 INFO Stage 7 UMAP output path: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_out/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 11:53:23,404 INFO Wrote artifact manifest: /sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_run_stage7_includes_synth0/stage7_manifest.json
+2026-04-17 11:53:23,404 INFO Stage 7 complete; unresolved gaps: none
+2026-04-17 15:39:15,977 INFO Stage 7 validation streams: {
+  "synthetic_validation": "not_executed_in_stage7_pipeline_run",
+  "internal_biological_stratification": "attempted_via_marginal_label_and_cna_tables",
+  "spatial_coherence": "attempted_neighbor_correlation_of_perturbation_norm",
+  "baseline_comparison": "executed_distance_metrics_and_shared_umap",
+  "held_out_section_patient_cohort": "not_executed_spot_and_section_macro_metrics_are_internal_only",
+  "st_codex_cross_modal": "optional_not_run",
+  "stage4b_pathway_gain_attribution": "attempted_when_linear_and_neural_outputs_available"
+}
+2026-04-17 15:39:15,977 INFO Stage 7 selected transport backend: bayesian_linear
+2026-04-17 15:39:15,977 INFO Baselines evaluated (gene-space counterfactuals): ['SpatialBridge', 'StaticOT_centroid', 'UnconditionalBridge', 'DE_shift', 'LatentNN_normal_blend', 'SpatialBridge_linear']
+2026-04-17 15:39:16,092 INFO Wrote spatial coherence summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/stage_7_spatial_coherence.csv
+2026-04-17 15:39:16,114 INFO Wrote biological plausibility summary: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/stage_7_biological_plausibility.csv
+2026-04-17 15:39:16,114 INFO Benchmark metrics path (pipeline): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/benchmark_metrics.csv
+2026-04-17 15:39:16,116 INFO Loaded synthetic validation artifacts: {
+  "manifest": "results/synthetic_validation/synthetic_validation_manifest.json",
+  "summary_rows": 1,
+  "spotwise_rows": 576
+}
+2026-04-17 15:39:20,621 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_7_umap_stage_progression.png
+2026-04-17 15:39:21,793 WARNING Stage 7: missing baseline key SpatialBridge_neural (omitted from comparison UMAP)
+2026-04-17 15:39:34,394 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 15:39:37,420 INFO Stage 7 UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 15:39:37,515 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_7_validation_summary.png
+2026-04-17 15:39:38,930 INFO Stage 7 summary figure: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_7_stage4b_transport_comparison.png
+2026-04-17 15:39:38,930 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_7_umap_stage_progression.png
+2026-04-17 15:39:38,931 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_7_umap_baseline_comparison.png
+2026-04-17 15:39:38,931 INFO Stage 7 UMAP output path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/full_run_bayes/figures/stage_7_umap_benchmark_variables.png
+2026-04-17 15:39:38,932 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_7_artifacts.json
+2026-04-17 15:39:38,932 INFO Stage 7 complete; unresolved gaps: none

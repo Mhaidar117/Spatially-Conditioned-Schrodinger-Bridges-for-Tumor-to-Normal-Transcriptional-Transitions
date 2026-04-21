@@ -1,0 +1,64 @@
+2026-03-22 coordinator integration pass (executed coordinator.md; workspace: Spatial_Perturbations)
+
+READ (per coordinator.md):
+- Docs/Prompts/coordinator.md
+- Docs/Prompts/visualization_standards.md
+- Docs/Prompts/README.md
+- Docs/Prompts/stage_1_data_ingestion.md through stage_7_reporting_benchmarking.md (suite)
+- Docs/Data_Information/project_summary.md
+- Docs/Data_Information/data_summary.md
+
+STAGE ARTIFACT MANIFESTS DISCOVERED (all present):
+- logs/stage_1_artifacts.json
+- logs/stage_2_artifacts.json
+- logs/stage_3_artifacts.json
+- logs/stage_4_artifacts.json
+- logs/stage_5_artifacts.json
+- logs/stage_6_artifacts.json
+- logs/stage_7_artifacts.json
+
+STAGE LOGS DISCOVERED (all present):
+- logs/stage_1_data_ingestion.log
+- logs/stage_2_marginal_definition.log
+- logs/stage_3_spatial_context.log
+- logs/stage_4_bridge_model.log
+- logs/stage_5_perturbation_extraction.log
+- logs/stage_6_program_discovery.log
+- logs/stage_7_reporting_benchmarking.log
+
+PERSISTENT RESULTS TREE VERIFIED:
+- results/stage_1_figures/ (3 UMAP PNGs)
+- results/stage_2_figures/, results/stage_2_live_run/figures/
+- results/stage_3_artifacts/, results/stage_3_figures/ (incl. visium_subset variants)
+- results/stage_4_artifacts/, results/stage_4_figures/
+- results/stage_5_artifacts/, results/stage_5_figures/
+- results/stage_6_artifacts/, results/stage_6_figures/
+- results/stage_7_artifacts/ — benchmark_metrics.csv, stage_7_spatial_coherence.csv, stage_7_biological_plausibility.csv, pathway_enrichment.csv, report.html, report.pdf, figures/stage_7_umap_stage_progression.png, stage_7_umap_baseline_comparison.png, stage_7_umap_benchmark_variables.png
+
+MISSING OR OPTIONAL ARTIFACTS:
+- Stage 5 manifest annotated_output.h5ad / annotated_output_obs.csv: optional when pipeline_run false; may be absent unless full run_pipeline() to cfg.output_path.
+- Synthetic validation stream: stage_7 manifest marks synthetic_validation as not_executed_in_stage7_pipeline_run.
+
+INTERFACE / DOCUMENTATION NOTES:
+- Stage 2 uses fallback_expression_program_hvg_proxy for cna_score; consistent with handoff warning in stage_2_artifacts.json for downstream.
+- Stage 3 manifest mixes synthetic fixture diagnostics with optional Visium subset figure paths; tests use synthetic bundle; Visium subset UMAPs may exist additionally.
+- Stage 4/5 sanity metrics in manifests align with toy-chain; Stage 1 is real Visium cohort scale — end-to-end full-gene Visium chain is not a single manifest line.
+- Stage 7 validation_streams: held_out_section_patient_cohort not_executed; st_codex_cross_modal optional_not_run.
+
+VISUALIZATION STANDARDS (visualization_standards.md) CHECK:
+- Compliant: stage-prefixed UMAP filenames for stages 1–7 under results/; umap_random_state 42 documented for stages 3–6 manifests; Stage 7 figures under results/stage_7_artifacts/figures/.
+- Partial: Stage 3 uses separate UMAP fits for pre vs context (stated limitation).
+- Root-level PNGs (malignancy_scores.png, etc.) not following stage_N_umap_* convention — exploratory unless renamed.
+
+ABLATIONS:
+- Documented in Project_Results.md: CNA vs proxy (proxy in logs); spatial ablation not summarized; tumor-only export post-hoc; NMF/PCA/ICA on toy in stage 6; held-out validation not run.
+
+TESTS:
+- Test scripts present: tests/test_stage_1_data_ingestion.py through tests/test_stage_7_reporting_benchmarking.py.
+- Coordinator execution: default python3 may lack pytest (PEP 668 externally-managed environment); full pytest suite not re-run in this pass; run inside venv: pip install pytest && pytest tests/.
+
+OUTPUT MANUSCRIPT PATH:
+- Docs/Results/Project_Results.md
+
+MACHINE READABLE SUMMARY:
+- logs/coordinator_artifacts.json

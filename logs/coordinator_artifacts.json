@@ -1,0 +1,199 @@
+{
+  "coordinator_run_date": "2026-03-22",
+  "project_results_md": "Docs/Results/Project_Results.md",
+  "stages_discovered": [
+    {
+      "stage": 1,
+      "name": "data_ingestion",
+      "manifest": "logs/stage_1_artifacts.json",
+      "log": "logs/stage_1_data_ingestion.log",
+      "status": "artifacts_and_figures_on_disk"
+    },
+    {
+      "stage": 2,
+      "name": "marginal_definition",
+      "manifest": "logs/stage_2_artifacts.json",
+      "log": "logs/stage_2_marginal_definition.log",
+      "status": "artifacts_and_figures_on_disk",
+      "note": "Live Visium proxy malignancy; synthetic test UMAPs also under results/stage_2_figures/"
+    },
+    {
+      "stage": 3,
+      "name": "spatial_context",
+      "manifest": "logs/stage_3_artifacts.json",
+      "log": "logs/stage_3_spatial_context.log",
+      "status": "artifacts_and_figures_on_disk"
+    },
+    {
+      "stage": 4,
+      "name": "bridge_model",
+      "manifest": "logs/stage_4_artifacts.json",
+      "log": "logs/stage_4_bridge_model.log",
+      "status": "artifacts_and_figures_on_disk"
+    },
+    {
+      "stage": 5,
+      "name": "perturbation_extraction",
+      "manifest": "logs/stage_5_artifacts.json",
+      "log": "logs/stage_5_perturbation_extraction.log",
+      "status": "core_artifacts_on_disk",
+      "note": "manifest pipeline_run false; annotated h5ad may be missing"
+    },
+    {
+      "stage": 6,
+      "name": "program_discovery",
+      "manifest": "logs/stage_6_artifacts.json",
+      "log": "logs/stage_6_program_discovery.log",
+      "status": "artifacts_and_figures_on_disk"
+    },
+    {
+      "stage": 7,
+      "name": "reporting_benchmarking",
+      "manifest": "logs/stage_7_artifacts.json",
+      "log": "logs/stage_7_reporting_benchmarking.log",
+      "status": "artifacts_and_figures_on_disk",
+      "note": "Durable outputs under results/stage_7_artifacts/; manifest may use relative paths"
+    }
+  ],
+  "missing_artifacts": [
+    {
+      "item": "stage_5_full_pipeline_annotated_h5ad_optional",
+      "detail": "annotated_output.h5ad / annotated_output_obs.csv optional when pipeline_run false",
+      "resolution": "Run run_pipeline() to cfg.output_path as documented in stage_5 manifest"
+    },
+    {
+      "item": "held_out_validation_splits",
+      "detail": "Not executed per stage_7 validation_streams",
+      "resolution": "Define section/patient splits and regenerate benchmark_metrics.csv"
+    }
+  ],
+  "integrated_outputs_used": [
+    "logs/stage_1_artifacts.json",
+    "logs/stage_2_artifacts.json",
+    "logs/stage_3_artifacts.json",
+    "logs/stage_4_artifacts.json",
+    "logs/stage_5_artifacts.json",
+    "logs/stage_6_artifacts.json",
+    "logs/stage_7_artifacts.json",
+    "logs/stage_1_data_ingestion.log",
+    "logs/stage_2_marginal_definition.log",
+    "logs/stage_7_reporting_benchmarking.log",
+    "Docs/Data_Information/project_summary.md",
+    "Docs/Data_Information/data_summary.md",
+    "results/stage_7_artifacts/benchmark_metrics.csv",
+    "results/stage_7_artifacts/stage_7_spatial_coherence.csv",
+    "results/stage_7_artifacts/stage_7_biological_plausibility.csv",
+    "results/stage_4_artifacts/bridge_model.npz",
+    "results/stage_4_artifacts/bridge_model.summary.json",
+    "results/stage_3_artifacts/knn_indices.npy",
+    "results/stage_3_artifacts/context_matrix.npy",
+    "results/stage_5_artifacts/perturbation_matrix.csv",
+    "results/stage_5_artifacts/stage_5_expression_bundle.npz",
+    "results/stage_5_artifacts/stage_5_spot_summary.csv",
+    "results/stage_5_artifacts/transported_expression.csv",
+    "results/stage_6_artifacts/stage_6_nmf_scores.csv",
+    "results/stage_6_artifacts/stage_6_nmf_loadings.csv",
+    "results/stage_6_artifacts/stage_6_factorization_comparison.csv",
+    "results/stage_6_artifacts/stage_6_pca_scores.csv",
+    "results/stage_6_artifacts/stage_6_ica_scores.csv",
+    "results/stage_6_artifacts/stage_6_stratified_nmf_means_by_marginal_label.csv",
+    "results/stage_6_artifacts/stage_6_program_diagnostics.json",
+    "results/stage_2_live_run/malignancy_counts_by_section.csv",
+    "results/stage_7_artifacts/report.html",
+    "results/stage_7_artifacts/report.pdf",
+    "results/stage_7_artifacts/pathway_enrichment.csv"
+  ],
+  "figure_and_table_paths_cited": [
+    "results/stage_1_figures/stage_1_umap_section_id.png",
+    "results/stage_1_figures/stage_1_umap_sample_batch.png",
+    "results/stage_1_figures/stage_1_umap_metadata_join.png",
+    "results/stage_2_figures/stage_2_umap_cna_score.png",
+    "results/stage_2_figures/stage_2_umap_marginal_labels.png",
+    "results/stage_2_figures/stage_2_umap_malignancy_provenance.png",
+    "results/stage_2_live_run/figures/stage_2_umap_cna_score.png",
+    "results/stage_2_live_run/figures/malignancy_spatial_map.png",
+    "results/stage_3_figures/stage_3_umap_pre_context_section_id.png",
+    "results/stage_3_figures/stage_3_umap_context_enriched_section_id.png",
+    "results/stage_3_figures/stage_3_umap_neighborhood_diagnostics_mean_neighbor_distance.png",
+    "results/stage_3_figures/stage_3_umap_visium_subset_pre_context_section_id.png",
+    "results/stage_3_figures/stage_3_umap_visium_subset_context_enriched_section_id.png",
+    "results/stage_3_figures/stage_3_umap_visium_subset_neighborhood_diagnostics_mean_neighbor_distance.png",
+    "results/stage_4_figures/stage_4_umap_observed_marginal_labels.png",
+    "results/stage_4_figures/stage_4_umap_transported_marginal_labels.png",
+    "results/stage_4_figures/stage_4_umap_delta_distance_toward_reference.png",
+    "results/stage_5_figures/stage_5_umap_observed_marginal_labels.png",
+    "results/stage_5_figures/stage_5_umap_transported_marginal_labels.png",
+    "results/stage_5_figures/stage_5_umap_perturbation_norm.png",
+    "results/stage_6_figures/stage_6_umap_nmf_dominant_program.png",
+    "results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png",
+    "results/stage_6_figures/stage_6_umap_pca_dominant_partition.png",
+    "results/stage_6_figures/stage_6_umap_ica_dominant_partition.png",
+    "results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png",
+    "results/stage_6_artifacts/stage_6_factorization_comparison.csv",
+    "results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png",
+    "results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png",
+    "results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png",
+    "results/stage_7_artifacts/benchmark_metrics.csv",
+    "results/stage_7_artifacts/stage_7_spatial_coherence.csv",
+    "results/stage_7_artifacts/stage_7_biological_plausibility.csv"
+  ],
+  "umap_figure_paths_cited": [
+    "results/stage_1_figures/stage_1_umap_section_id.png",
+    "results/stage_1_figures/stage_1_umap_sample_batch.png",
+    "results/stage_1_figures/stage_1_umap_metadata_join.png",
+    "results/stage_2_figures/stage_2_umap_cna_score.png",
+    "results/stage_2_figures/stage_2_umap_marginal_labels.png",
+    "results/stage_2_figures/stage_2_umap_malignancy_provenance.png",
+    "results/stage_3_figures/stage_3_umap_pre_context_section_id.png",
+    "results/stage_3_figures/stage_3_umap_context_enriched_section_id.png",
+    "results/stage_3_figures/stage_3_umap_neighborhood_diagnostics_mean_neighbor_distance.png",
+    "results/stage_3_figures/stage_3_umap_visium_subset_pre_context_section_id.png",
+    "results/stage_3_figures/stage_3_umap_visium_subset_context_enriched_section_id.png",
+    "results/stage_3_figures/stage_3_umap_visium_subset_neighborhood_diagnostics_mean_neighbor_distance.png",
+    "results/stage_4_figures/stage_4_umap_observed_marginal_labels.png",
+    "results/stage_4_figures/stage_4_umap_transported_marginal_labels.png",
+    "results/stage_4_figures/stage_4_umap_delta_distance_toward_reference.png",
+    "results/stage_5_figures/stage_5_umap_observed_marginal_labels.png",
+    "results/stage_5_figures/stage_5_umap_transported_marginal_labels.png",
+    "results/stage_5_figures/stage_5_umap_perturbation_norm.png",
+    "results/stage_6_figures/stage_6_umap_nmf_dominant_program.png",
+    "results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png",
+    "results/stage_6_figures/stage_6_umap_pca_dominant_partition.png",
+    "results/stage_6_figures/stage_6_umap_ica_dominant_partition.png",
+    "results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png",
+    "results/stage_7_artifacts/figures/stage_7_umap_stage_progression.png",
+    "results/stage_7_artifacts/figures/stage_7_umap_baseline_comparison.png",
+    "results/stage_7_artifacts/figures/stage_7_umap_benchmark_variables.png"
+  ],
+  "umap_figure_paths_missing_from_workspace": [],
+  "interface_mismatches_or_caveats": [
+    "stage_3 separate UMAP fits for pre vs context-enriched features (documented in stage_3 manifest)",
+    "stages_4_to_6 metrics and figures align with synthetic test bundle; stage_1_to_2 include real Visium scale",
+    "stage_2 malignancy is fallback_expression_program_hvg_proxy unless CNA path enabled",
+    "benchmark split_scope is internal; not held-out generalization"
+  ],
+  "visualization_standards_notes": {
+    "compliant": [
+      "stage-prefixed UMAP filenames stages 1–7 under results/",
+      "umap_random_state 42 in manifests stages 3–6",
+      "Stage 7 UMAPs under results/stage_7_artifacts/figures/"
+    ],
+    "gaps": [
+      "Separate embeddings for some before/after comparisons (stage 3; possibly 4–5)",
+      "Root-level exploratory PNGs not following stage_N_umap_* naming"
+    ]
+  },
+  "ablations_available_vs_needed": {
+    "available_in_repo": [
+      "NMF vs PCA vs ICA comparison (stage_6_factorization_comparison.csv)",
+      "Multiple transport baselines (benchmark_metrics.csv)"
+    ],
+    "needed": [
+      "CNA-based vs proxy marginals",
+      "Spatial off vs on",
+      "Held-out section/patient splits",
+      "Tumor-only artifact export optional"
+    ]
+  },
+  "pytest_status_this_pass": "not_run_pep668_no_pytest_on_default_python"
+}

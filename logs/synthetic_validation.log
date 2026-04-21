@@ -1,0 +1,630 @@
+2026-04-16 15:52:14,672 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-16 15:52:15,431 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3513387515744921,
+    "median_gene_cosine_similarity": 0.822177564207399,
+    "mean_gene_l2_error": 1.3307556593314598,
+    "median_gene_l2_error": 0.80740247554915,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.992919309215447,
+    "malignancy_vs_inferred_strength_correlation": 0.9924107708291775,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307556593314598,
+    "mean_delta_toward_healthy": 0.5689188067381107
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-12/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json"
+}
+2026-04-16 15:52:45,392 INFO Running synthetic validation with grid=24x24, genes=48, seed=7, backend=linear
+2026-04-16 15:52:46,257 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    24,
+    24
+  ],
+  "n_genes": 48,
+  "seed": 7,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "results/synthetic_validation/synthetic_validation_summary.csv",
+    "spotwise_csv": "results/synthetic_validation/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "results/synthetic_validation/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "results/synthetic_validation/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "results/synthetic_validation/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "results/synthetic_validation/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "results/synthetic_validation/figures/synthetic_post_transport_residual.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.573319718798732,
+    "median_gene_cosine_similarity": 0.7001044976050845,
+    "mean_gene_l2_error": 1.1820944878929731,
+    "median_gene_l2_error": 0.6173335143194015,
+    "mean_directional_cosine_xy": 0.5868055555555556,
+    "fraction_positive_inward_direction": 0.5868055555555556,
+    "recovery_strength_correlation": 0.9980898365848788,
+    "malignancy_vs_inferred_strength_correlation": 0.9971709436221701,
+    "mean_pre_distance_to_healthy": 1.7010123989642498,
+    "mean_post_distance_to_healthy": 1.1820944878929731,
+    "mean_delta_toward_healthy": 0.5189179110712767
+  },
+  "n_spots": 576,
+  "artifact_manifest_path": "results/synthetic_validation/synthetic_validation_manifest.json"
+}
+2026-04-16 15:53:15,232 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-16 15:53:16,007 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3513387515744921,
+    "median_gene_cosine_similarity": 0.822177564207399,
+    "mean_gene_l2_error": 1.3307556593314598,
+    "median_gene_l2_error": 0.80740247554915,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.992919309215447,
+    "malignancy_vs_inferred_strength_correlation": 0.9924107708291775,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307556593314598,
+    "mean_delta_toward_healthy": 0.5689188067381107
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/private/var/folders/yl/pwzbfdbj3t750krq7cky4n5c0000gn/T/pytest-of-michaelhaidar/pytest-13/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json"
+}
+2026-04-17 11:44:46,110 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-17 11:44:47,099 INFO Running non-spatial ablation (context = expr)
+2026-04-17 11:44:47,333 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3527777904326325,
+    "median_gene_cosine_similarity": 0.8222620929853364,
+    "mean_gene_l2_error": 1.3307959994386218,
+    "median_gene_l2_error": 0.8073525414770797,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.9931001056043506,
+    "malignancy_vs_inferred_strength_correlation": 0.9925692563550967,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307959994386218,
+    "mean_delta_toward_healthy": 0.568878466630949
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.3307959994386218,
+    "nonspatial_mean_gene_l2_error": 1.2011422339365532,
+    "spatial_mean_gene_cosine_similarity": 0.3527777904326325,
+    "nonspatial_mean_gene_cosine_similarity": 0.38632801532786915,
+    "spatial_neighborhood_coherence": 0.766399879969367,
+    "nonspatial_neighborhood_coherence": 0.8650529345521134,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-2/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_spotwise.csv"
+  }
+}
+2026-04-17 11:45:05,607 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-17 11:45:06,633 INFO Running non-spatial ablation (context = expr)
+2026-04-17 11:45:06,870 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3527777904326325,
+    "median_gene_cosine_similarity": 0.8222620929853364,
+    "mean_gene_l2_error": 1.3307959994386218,
+    "median_gene_l2_error": 0.8073525414770797,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.9931001056043506,
+    "malignancy_vs_inferred_strength_correlation": 0.9925692563550967,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307959994386218,
+    "mean_delta_toward_healthy": 0.568878466630949
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.3307959994386218,
+    "nonspatial_mean_gene_l2_error": 1.2011422339365532,
+    "spatial_mean_gene_cosine_similarity": 0.3527777904326325,
+    "nonspatial_mean_gene_cosine_similarity": 0.38632801532786915,
+    "spatial_neighborhood_coherence": 0.766399879969367,
+    "nonspatial_neighborhood_coherence": 0.8650529345521134,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-3/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_spotwise.csv"
+  }
+}
+2026-04-17 11:47:31,774 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-17 11:47:32,772 INFO Running non-spatial ablation (context = expr)
+2026-04-17 11:47:33,005 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3527777904326325,
+    "median_gene_cosine_similarity": 0.8222620929853364,
+    "mean_gene_l2_error": 1.3307959994386218,
+    "median_gene_l2_error": 0.8073525414770797,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.9931001056043506,
+    "malignancy_vs_inferred_strength_correlation": 0.9925692563550967,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307959994386218,
+    "mean_delta_toward_healthy": 0.568878466630949
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.3307959994386218,
+    "nonspatial_mean_gene_l2_error": 1.2011422339365532,
+    "spatial_mean_gene_cosine_similarity": 0.3527777904326325,
+    "nonspatial_mean_gene_cosine_similarity": 0.38632801532786915,
+    "spatial_neighborhood_coherence": 0.766399879969367,
+    "nonspatial_neighborhood_coherence": 0.8650529345521134,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-4/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_spotwise.csv"
+  }
+}
+2026-04-17 11:47:50,770 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-17 11:47:51,891 INFO Running non-spatial ablation (context = expr)
+2026-04-17 11:47:52,133 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3527777904326325,
+    "median_gene_cosine_similarity": 0.8222620929853364,
+    "mean_gene_l2_error": 1.3307959994386218,
+    "median_gene_l2_error": 0.8073525414770797,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.9931001056043506,
+    "malignancy_vs_inferred_strength_correlation": 0.9925692563550967,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307959994386218,
+    "mean_delta_toward_healthy": 0.568878466630949
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.3307959994386218,
+    "nonspatial_mean_gene_l2_error": 1.2011422339365532,
+    "spatial_mean_gene_cosine_similarity": 0.3527777904326325,
+    "nonspatial_mean_gene_cosine_similarity": 0.38632801532786915,
+    "spatial_neighborhood_coherence": 0.766399879969367,
+    "nonspatial_neighborhood_coherence": 0.8650529345521134,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-5/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_spotwise.csv"
+  }
+}
+2026-04-17 11:49:56,114 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-17 11:49:57,134 INFO Running non-spatial ablation (context = expr)
+2026-04-17 11:49:57,372 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3527777904326325,
+    "median_gene_cosine_similarity": 0.8222620929853364,
+    "mean_gene_l2_error": 1.3307959994386218,
+    "median_gene_l2_error": 0.8073525414770797,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.9931001056043506,
+    "malignancy_vs_inferred_strength_correlation": 0.9925692563550967,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307959994386218,
+    "mean_delta_toward_healthy": 0.568878466630949
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.3307959994386218,
+    "nonspatial_mean_gene_l2_error": 1.2011422339365532,
+    "spatial_mean_gene_cosine_similarity": 0.3527777904326325,
+    "nonspatial_mean_gene_cosine_similarity": 0.38632801532786915,
+    "spatial_neighborhood_coherence": 0.766399879969367,
+    "nonspatial_neighborhood_coherence": 0.8650529345521134,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-7/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_spotwise.csv"
+  }
+}
+2026-04-17 11:52:02,133 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-17 11:52:03,143 INFO Running non-spatial ablation (context = expr)
+2026-04-17 11:52:03,390 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3527777904326325,
+    "median_gene_cosine_similarity": 0.8222620929853364,
+    "mean_gene_l2_error": 1.3307959994386218,
+    "median_gene_l2_error": 0.8073525414770797,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.9931001056043506,
+    "malignancy_vs_inferred_strength_correlation": 0.9925692563550967,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307959994386218,
+    "mean_delta_toward_healthy": 0.568878466630949
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.3307959994386218,
+    "nonspatial_mean_gene_l2_error": 1.2011422339365532,
+    "spatial_mean_gene_cosine_similarity": 0.3527777904326325,
+    "nonspatial_mean_gene_cosine_similarity": 0.38632801532786915,
+    "spatial_neighborhood_coherence": 0.766399879969367,
+    "nonspatial_neighborhood_coherence": 0.8650529345521134,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-8/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_spotwise.csv"
+  }
+}
+2026-04-17 11:53:26,184 INFO Running synthetic validation with grid=10x10, genes=20, seed=5, backend=linear
+2026-04-17 11:53:27,220 INFO Running non-spatial ablation (context = expr)
+2026-04-17 11:53:27,457 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    10,
+    10
+  ],
+  "n_genes": 20,
+  "seed": 5,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/synthetic_validation_summary.csv",
+    "spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.3527777904326325,
+    "median_gene_cosine_similarity": 0.8222620929853364,
+    "mean_gene_l2_error": 1.3307959994386218,
+    "median_gene_l2_error": 0.8073525414770797,
+    "mean_directional_cosine_xy": 0.57,
+    "fraction_positive_inward_direction": 0.57,
+    "recovery_strength_correlation": 0.9931001056043506,
+    "malignancy_vs_inferred_strength_correlation": 0.9925692563550967,
+    "mean_pre_distance_to_healthy": 1.8996744660695708,
+    "mean_post_distance_to_healthy": 1.3307959994386218,
+    "mean_delta_toward_healthy": 0.568878466630949
+  },
+  "n_spots": 100,
+  "artifact_manifest_path": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.3307959994386218,
+    "nonspatial_mean_gene_l2_error": 1.2011422339365532,
+    "spatial_mean_gene_cosine_similarity": 0.3527777904326325,
+    "nonspatial_mean_gene_cosine_similarity": 0.38632801532786915,
+    "spatial_neighborhood_coherence": 0.766399879969367,
+    "nonspatial_neighborhood_coherence": 0.8650529345521134,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "/sessions/sleepy-laughing-clarke/tmp/pytest-of-sleepy-laughing-clarke/pytest-9/test_standalone_runner_main_wr0/runner_out/synthetic_validation_ablation_spotwise.csv"
+  }
+}
+2026-04-17 11:53:34,374 INFO Running synthetic validation with grid=24x24, genes=48, seed=7, backend=linear
+2026-04-17 11:53:35,554 INFO Running non-spatial ablation (context = expr)
+2026-04-17 11:53:35,822 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    24,
+    24
+  ],
+  "n_genes": 48,
+  "seed": 7,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "results/synthetic_validation/synthetic_validation_summary.csv",
+    "spotwise_csv": "results/synthetic_validation/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "results/synthetic_validation/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "results/synthetic_validation/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "results/synthetic_validation/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "results/synthetic_validation/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "results/synthetic_validation/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "results/synthetic_validation/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.5733647253821101,
+    "median_gene_cosine_similarity": 0.7000424699293302,
+    "mean_gene_l2_error": 1.1821423401956928,
+    "median_gene_l2_error": 0.6173437990357065,
+    "mean_directional_cosine_xy": 0.5868055555555556,
+    "fraction_positive_inward_direction": 0.5868055555555556,
+    "recovery_strength_correlation": 0.9980900048622047,
+    "malignancy_vs_inferred_strength_correlation": 0.9971711397778745,
+    "mean_pre_distance_to_healthy": 1.7010123989642498,
+    "mean_post_distance_to_healthy": 1.1821423401956928,
+    "mean_delta_toward_healthy": 0.5188700587685571
+  },
+  "n_spots": 576,
+  "artifact_manifest_path": "results/synthetic_validation/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.1821423401956928,
+    "nonspatial_mean_gene_l2_error": 1.0676391602588804,
+    "spatial_mean_gene_cosine_similarity": 0.5733647253821101,
+    "nonspatial_mean_gene_cosine_similarity": 0.4727347923177391,
+    "spatial_neighborhood_coherence": 0.6191949162968715,
+    "nonspatial_neighborhood_coherence": 0.8656844487322817,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "results/synthetic_validation/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "results/synthetic_validation/synthetic_validation_ablation_spotwise.csv"
+  }
+}
+2026-04-17 14:45:18,894 INFO Running synthetic validation with grid=24x24, genes=48, seed=7, backend=bayesian_linear
+2026-04-17 14:45:19,729 INFO Running non-spatial ablation (context = expr)
+2026-04-17 14:45:19,924 INFO Synthetic validation manifest: {
+  "stage": "synthetic_validation",
+  "status": "executed",
+  "grid_shape": [
+    24,
+    24
+  ],
+  "n_genes": 48,
+  "seed": 7,
+  "source_xy": [
+    0.0,
+    0.0
+  ],
+  "transport_backend": "bayesian_linear",
+  "metrics_artifact_paths": {
+    "summary_csv": "results/synthetic_validation_bayes/synthetic_validation_summary.csv",
+    "spotwise_csv": "results/synthetic_validation_bayes/synthetic_validation_spotwise_metrics.csv"
+  },
+  "figure_paths": {
+    "synthetic_malignancy_gradient_png": "results/synthetic_validation_bayes/figures/synthetic_malignancy_gradient.png",
+    "synthetic_program_composition_png": "results/synthetic_validation_bayes/figures/synthetic_program_composition.png",
+    "synthetic_recovery_analysis_png": "results/synthetic_validation_bayes/figures/synthetic_recovery_analysis.png",
+    "synthetic_metric_summary_png": "results/synthetic_validation_bayes/figures/synthetic_metric_summary.png",
+    "synthetic_post_transport_residual_png": "results/synthetic_validation_bayes/figures/synthetic_post_transport_residual.png",
+    "synthetic_ablation_spatial_vs_nonspatial_png": "results/synthetic_validation_bayes/figures/synthetic_ablation_spatial_vs_nonspatial.png"
+  },
+  "summary_metrics": {
+    "mean_gene_cosine_similarity": 0.573319718798732,
+    "median_gene_cosine_similarity": 0.7001044976050845,
+    "mean_gene_l2_error": 1.1820944878929731,
+    "median_gene_l2_error": 0.6173335143194015,
+    "mean_directional_cosine_xy": 0.5868055555555556,
+    "fraction_positive_inward_direction": 0.5868055555555556,
+    "recovery_strength_correlation": 0.9980898365848788,
+    "malignancy_vs_inferred_strength_correlation": 0.9971709436221701,
+    "mean_pre_distance_to_healthy": 1.7010123989642498,
+    "mean_post_distance_to_healthy": 1.1820944878929731,
+    "mean_delta_toward_healthy": 0.5189179110712767
+  },
+  "n_spots": 576,
+  "artifact_manifest_path": "results/synthetic_validation_bayes/synthetic_validation_manifest.json",
+  "ablation": {
+    "spatial_mean_gene_l2_error": 1.1820944878929731,
+    "nonspatial_mean_gene_l2_error": 1.067639159952666,
+    "spatial_mean_gene_cosine_similarity": 0.573319718798732,
+    "nonspatial_mean_gene_cosine_similarity": 0.47273479225590403,
+    "spatial_neighborhood_coherence": 0.619135747323665,
+    "nonspatial_neighborhood_coherence": 0.8656672107445748,
+    "spatial_better_l2": false,
+    "spatial_better_coherence": false,
+    "ablation_summary_csv": "results/synthetic_validation_bayes/synthetic_validation_ablation_summary.csv",
+    "ablation_spotwise_csv": "results/synthetic_validation_bayes/synthetic_validation_ablation_spotwise.csv"
+  }
+}

@@ -1,0 +1,115 @@
+2026-03-22 15:40:12,358 INFO Stage 6 program discovery validation (repo root: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations)
+2026-03-22 15:40:12,360 INFO Perturbation shape (240, 60); chosen_components (effective) 4
+2026-03-22 15:40:12,360 INFO Program config: {"max_components": 12, "chosen_components": 4, "random_seed": 7, "umap_random_state": 42, "figure_dpi": 200, "top_genes_log": 10, "nmf_max_iter": 500}
+2026-03-22 15:40:12,404 INFO Method comparison:
+  method                            target  n_components  reconstruction_error  interpretability_score  sparsity_loadings  n_iter note
+0    NMF  nonnegative_shifted_perturbation             4              0.143517                     1.0           0.025000     391  NaN
+1    PCA                  raw_perturbation             4              0.881200                     0.0           0.037500       0  NaN
+2    ICA                  raw_perturbation             4              0.921833                     0.0           0.054167      -1   ok
+2026-03-22 15:40:12,405 INFO Top genes program_0: gene_5, gene_12, gene_8, gene_14, gene_0, gene_2, gene_11, gene_9, gene_1, gene_4
+2026-03-22 15:40:12,405 INFO Top genes program_1: gene_18, gene_26, gene_27, gene_21, gene_15, gene_25, gene_20, gene_22, gene_28, gene_19
+2026-03-22 15:40:12,406 INFO Top genes program_2: gene_56, gene_51, gene_46, gene_52, gene_48, gene_50, gene_54, gene_45, gene_55, gene_47
+2026-03-22 15:40:12,406 INFO NMF stability: {
+  "skipped": false,
+  "mean_matched_loading_cosine": 0.9999999999997945,
+  "per_component_cosine": [
+    0.9999999999998721,
+    0.9999999999998057,
+    0.9999999999997822,
+    0.999999999999718
+  ],
+  "seed_a": 7,
+  "seed_b": 1007
+}
+2026-03-22 15:40:12,411 INFO Wrote artifact [nmf_scores_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_scores.csv
+2026-03-22 15:40:12,412 INFO Wrote artifact [nmf_loadings_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_loadings.csv
+2026-03-22 15:40:12,412 INFO Wrote artifact [factorization_comparison_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_factorization_comparison.csv
+2026-03-22 15:40:12,412 INFO Wrote artifact [pca_scores_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_pca_scores.csv
+2026-03-22 15:40:12,412 INFO Wrote artifact [ica_scores_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_ica_scores.csv
+2026-03-22 15:40:12,412 INFO Wrote artifact [stratified_marginal_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_stratified_nmf_means_by_marginal_label.csv
+2026-03-22 15:40:12,412 INFO Wrote artifact [diagnostics_json]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_program_diagnostics.json
+2026-03-22 15:40:12,910 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_dominant_program.png
+2026-03-22 15:40:13,114 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png
+2026-03-22 15:40:13,185 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_pca_dominant_partition.png
+2026-03-22 15:40:13,252 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_ica_dominant_partition.png
+2026-03-22 15:40:13,306 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png
+2026-03-22 15:40:13,306 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_dominant_program.png
+2026-03-22 15:40:13,306 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png
+2026-03-22 15:40:13,307 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_pca_dominant_partition.png
+2026-03-22 15:40:13,307 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_ica_dominant_partition.png
+2026-03-22 15:40:13,307 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png
+2026-03-22 15:40:13,308 INFO Wrote manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_6_artifacts.json
+2026-03-22 15:40:13,308 INFO Produced artifacts: [
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_6_program_discovery.log",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_6_artifacts.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_scores.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_loadings.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_factorization_comparison.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_pca_scores.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_ica_scores.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_stratified_nmf_means_by_marginal_label.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_program_diagnostics.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_dominant_program.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_pca_dominant_partition.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_ica_dominant_partition.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png"
+]
+2026-03-22 15:40:30,790 INFO Stage 6 program discovery validation (repo root: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations)
+2026-03-22 15:40:30,791 INFO Perturbation shape (240, 60); chosen_components (effective) 4
+2026-03-22 15:40:30,791 INFO Program config: {"max_components": 12, "chosen_components": 4, "random_seed": 7, "umap_random_state": 42, "figure_dpi": 200, "top_genes_log": 10, "nmf_max_iter": 500}
+2026-03-22 15:40:30,817 INFO Method comparison:
+  method                            target  n_components  reconstruction_error  interpretability_score  sparsity_loadings  n_iter note
+0    NMF  nonnegative_shifted_perturbation             4              0.143517                     1.0           0.025000     391  NaN
+1    PCA                  raw_perturbation             4              0.881200                     0.0           0.037500       0  NaN
+2    ICA                  raw_perturbation             4              0.921833                     0.0           0.054167      -1   ok
+2026-03-22 15:40:30,817 INFO Top genes program_0: gene_5, gene_12, gene_8, gene_14, gene_0, gene_2, gene_11, gene_9, gene_1, gene_4
+2026-03-22 15:40:30,817 INFO Top genes program_1: gene_18, gene_26, gene_27, gene_21, gene_15, gene_25, gene_20, gene_22, gene_28, gene_19
+2026-03-22 15:40:30,817 INFO Top genes program_2: gene_56, gene_51, gene_46, gene_52, gene_48, gene_50, gene_54, gene_45, gene_55, gene_47
+2026-03-22 15:40:30,818 INFO NMF stability: {
+  "skipped": false,
+  "mean_matched_loading_cosine": 0.9999999999997945,
+  "per_component_cosine": [
+    0.9999999999998721,
+    0.9999999999998057,
+    0.9999999999997822,
+    0.999999999999718
+  ],
+  "seed_a": 7,
+  "seed_b": 1007
+}
+2026-03-22 15:40:30,822 INFO Wrote artifact [nmf_scores_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_scores.csv
+2026-03-22 15:40:30,822 INFO Wrote artifact [nmf_loadings_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_loadings.csv
+2026-03-22 15:40:30,822 INFO Wrote artifact [factorization_comparison_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_factorization_comparison.csv
+2026-03-22 15:40:30,822 INFO Wrote artifact [pca_scores_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_pca_scores.csv
+2026-03-22 15:40:30,822 INFO Wrote artifact [ica_scores_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_ica_scores.csv
+2026-03-22 15:40:30,822 INFO Wrote artifact [stratified_marginal_csv]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_stratified_nmf_means_by_marginal_label.csv
+2026-03-22 15:40:30,822 INFO Wrote artifact [diagnostics_json]: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_program_diagnostics.json
+2026-03-22 15:40:30,925 INFO Stage 6 perturbation embedding basis: PCA 2D fallback on perturbations — install umap-learn for UMAP
+2026-03-22 15:40:31,005 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_dominant_program.png
+2026-03-22 15:40:31,220 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png
+2026-03-22 15:40:31,288 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_pca_dominant_partition.png
+2026-03-22 15:40:31,353 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_ica_dominant_partition.png
+2026-03-22 15:40:31,407 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png
+2026-03-22 15:40:31,407 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_dominant_program.png
+2026-03-22 15:40:31,407 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png
+2026-03-22 15:40:31,408 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_pca_dominant_partition.png
+2026-03-22 15:40:31,408 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_ica_dominant_partition.png
+2026-03-22 15:40:31,408 INFO UMAP artifact path: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png
+2026-03-22 15:40:31,408 INFO Wrote manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_6_artifacts.json
+2026-03-22 15:40:31,408 INFO Produced artifacts: [
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_6_program_discovery.log",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_6_artifacts.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_scores.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_loadings.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_factorization_comparison.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_pca_scores.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_ica_scores.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_stratified_nmf_means_by_marginal_label.csv",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_program_diagnostics.json",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_dominant_program.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_pca_dominant_partition.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_ica_dominant_partition.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png"
+]

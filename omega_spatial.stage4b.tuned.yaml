@@ -1,0 +1,12 @@
+bridge:
+  backend: neural
+  neural_device: auto
+  neural_hidden_dim: 384
+  neural_num_layers: 3
+  neural_learning_rate: 0.0003
+  neural_dropout: 0.1
+  neural_weight_decay: 0.0002
+  neural_train_steps: 800
+cna:
+  true_score_rds_path: Data/Inputs/CNA/mal_lev.rds
+  true_score_regions_path: Data/Inputs/CNA/samples_regions.txt

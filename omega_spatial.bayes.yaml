@@ -1,0 +1,73 @@
+dataset_name: auto
+run_name: omega_spatial_run_bayes
+qc:
+  min_counts_per_spot: 500
+  min_genes_per_spot: 100
+  top_hvg: 2000
+  log1p: true
+state:
+  cna_column: cna_score
+  low_quantile: 0.2
+  high_quantile: 0.8
+  section_column: section_id
+cna:
+  canonical_column: cna_score
+  aliases:
+    - cna_score
+    - malignancy_score
+    - cna
+    - malignancy
+  require_true_score: true
+  true_score_rds_path: Data/Inputs/CNA/mal_lev.rds
+  true_score_regions_path: Data/Inputs/CNA/samples_regions.txt
+  infer_if_missing: true
+  program_fallback_top_genes: 800
+  gene_annotation_path: ""
+  gene_id_column: gene_id
+  chromosome_column: chromosome
+  position_column: position
+  reference_normal_path: ""
+  smoothing_window: 101
+  constant_score_std_threshold: 1.0e-6
+  min_mapped_genes: 500
+  min_spots_per_group: 25
+spatial:
+  x_column: x
+  y_column: y
+  k_neighbors: 8
+  spatial_smoothing_alpha: 0.3
+train:
+  steps: 250
+  learning_rate: 0.001
+  batch_size: 1024
+  random_seed: 7
+  gradient_accumulation: 1
+  mixed_precision: true
+  checkpoint_every_steps: 50
+bridge:
+  backend: bayesian_linear
+  ridge_lambda: 0.001
+  transport_n_steps: 8
+  reverse_step_size: 0.2
+  neural_hidden_dim: 256
+  neural_num_layers: 2
+  neural_dropout: 0.05
+  neural_learning_rate: 0.001
+  neural_weight_decay: 0.0001
+  neural_train_steps: 400
+  neural_device: auto
+programs:
+  max_components: 12
+  chosen_components: 6
+  random_seed: 7
+  umap_random_state: 42
+  figure_dpi: 200
+  top_genes_log: 12
+  nmf_max_iter: 500
+report:
+  title: Omega Spatial Control Report (Bayesian backend)
+  include_pdf: true
+  enrichment_gmt_path: Data/Inputs/GeneSets/h.all.v2024.1.Hs.symbols.gmt
+  enrichment_top_genes: 200
+  enrichment_min_set_size: 10
+  enrichment_max_set_size: 500

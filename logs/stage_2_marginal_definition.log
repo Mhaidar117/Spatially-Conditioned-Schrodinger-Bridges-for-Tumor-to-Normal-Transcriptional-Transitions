@@ -1,0 +1,31 @@
+2026-03-22 15:25:27,327 INFO Stage 2 marginal definition validation (repo root: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations)
+2026-03-22 15:25:27,329 INFO Aliases configured: ['cna_score', 'malignancy_score', 'cna', 'malignancy']
+2026-03-22 15:25:27,329 INFO Canonical column: cna_score
+2026-03-22 15:25:31,314 INFO Repo UMAP (synthetic): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_cna_score.png
+2026-03-22 15:25:31,314 INFO Repo UMAP (synthetic): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_marginal_labels.png
+2026-03-22 15:25:31,314 INFO Repo UMAP (synthetic): /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_malignancy_provenance.png
+2026-03-22 15:25:31,314 WARNING Section 'A' has low-confidence marginal construction: tumor=8, normal=8.
+2026-03-22 15:25:34,955 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_cna_score.png
+2026-03-22 15:25:34,955 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_marginal_labels.png
+2026-03-22 15:25:34,955 INFO UMAP artifact: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_malignancy_provenance.png
+2026-03-22 15:25:34,955 INFO Malignancy source summary: fallback_expression_program_hvg_proxy
+2026-03-22 15:25:34,955 INFO Provenance: fallback_expression_program_hvg_proxy
+2026-03-22 15:25:34,955 INFO Decision path: ['no_existing_malignancy_column', 'expression_program_hvg_fallback']
+2026-03-22 15:25:34,956 INFO Section MGH258 tumor=459 normal=459 intermediate=1373 thresholds=[0.1630, 0.6737]
+2026-03-22 15:25:34,956 INFO Section UKF243 tumor=383 normal=383 intermediate=1146 thresholds=[0.2843, 0.8950]
+2026-03-22 15:25:34,957 INFO Score min=0.0000 max=1.0000 q20=0.2000 q50=0.5000 q80=0.8000
+2026-03-22 15:25:34,957 INFO Fallback / decision path: no_existing_malignancy_column -> expression_program_hvg_fallback
+2026-03-22 15:25:34,957 WARNING Stage2: Used HVG expression-program malignancy proxy (data_exploration-style fallback, not curated program banks); n_hvg=800.
+2026-03-22 15:25:34,958 INFO Wrote artifact manifest: /Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/logs/stage_2_artifacts.json
+2026-03-22 15:25:34,958 INFO Malignancy source (live if run): fallback_expression_program_hvg_proxy
+2026-03-22 15:25:34,958 INFO Aliases configured: ['cna_score', 'malignancy_score', 'cna', 'malignancy']
+2026-03-22 15:25:34,958 INFO Live run malignancy_provenance column value: fallback_expression_program_hvg_proxy
+2026-03-22 15:25:34,958 INFO UMAP paths: [
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_cna_score.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_marginal_labels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_live_run/figures/stage_2_umap_malignancy_provenance.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_cna_score.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_marginal_labels.png",
+  "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_2_figures/stage_2_umap_malignancy_provenance.png"
+]
+2026-03-22 15:25:34,958 INFO Handoff: column=cna_score labels=['tumor', 'normal', 'intermediate']

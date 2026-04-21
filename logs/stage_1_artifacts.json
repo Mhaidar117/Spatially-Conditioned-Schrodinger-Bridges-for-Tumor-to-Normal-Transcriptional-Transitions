@@ -1,0 +1,117 @@
+{
+  "source_files": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/visium_metadata.csv",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/MGH258/outs/filtered_feature_bc_matrix.h5",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/MGH258/outs/spatial",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/UKF243/outs/filtered_feature_bc_matrix.h5",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/UKF243/outs/spatial",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/UKF248/outs/filtered_feature_bc_matrix.h5",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/UKF248/outs/spatial"
+  ],
+  "output_schema": {
+    "obs_columns": [
+      "barcode",
+      "in_tissue",
+      "array_row",
+      "array_col",
+      "pxl_row_in_fullres",
+      "pxl_col_in_fullres",
+      "section_id",
+      "spot_id",
+      "metadata_sample",
+      "centroid_x",
+      "centroid_y",
+      "mp",
+      "layer",
+      "ivygap",
+      "org1",
+      "org2",
+      "cc",
+      "cna_bin",
+      "metadata_joined",
+      "x",
+      "y"
+    ],
+    "var_names_count": 33538,
+    "n_spots": 7378,
+    "n_genes": 33538,
+    "dataset_kind": "gbm_cohort"
+  },
+  "umap_figure_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_1_figures/stage_1_umap_section_id.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_1_figures/stage_1_umap_sample_batch.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_1_figures/stage_1_umap_metadata_join.png"
+  ],
+  "test_script_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/tests/test_stage_1_data_ingestion.py",
+  "known_limitations": [],
+  "blockers_for_downstream_stages": [],
+  "stage1_diagnosis": {
+    "dataset_kind": "gbm_cohort",
+    "source_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data",
+    "n_spots": 7378,
+    "n_genes": 33538,
+    "n_sections": 3,
+    "missing_canonical_columns": [],
+    "evaluation_columns_present": [
+      "mp",
+      "layer",
+      "ivygap",
+      "org1",
+      "org2",
+      "cc",
+      "cna_bin"
+    ],
+    "malignancy_related_columns_present": [
+      "cna_bin"
+    ],
+    "cna_bin_available": true,
+    "metadata_join_coverage": 0.952561669829222,
+    "spot_id_in_obs": true,
+    "barcode_in_obs": true,
+    "ingestion_diagnostics": {
+      "join_keys_attempted": [
+        "spot_id<->barcode"
+      ],
+      "join_key_used": "spot_id<->barcode",
+      "metadata_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/visium_metadata.csv",
+      "metadata_rows_matched": 7028,
+      "metadata_match_rate": 0.952561669829222,
+      "samples_loaded": [
+        "MGH258",
+        "UKF243",
+        "UKF248"
+      ],
+      "source_files": [
+        "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/MGH258/outs/filtered_feature_bc_matrix.h5",
+        "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/MGH258/outs/spatial",
+        "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/visium_metadata.csv",
+        "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/UKF243/outs/filtered_feature_bc_matrix.h5",
+        "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/UKF243/outs/spatial",
+        "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/UKF248/outs/filtered_feature_bc_matrix.h5",
+        "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/Data/Inputs/general/GBM_data/UKF248/outs/spatial"
+      ],
+      "missing_metadata_columns": [
+        "cna_score",
+        "malignancy_score"
+      ],
+      "warnings": [
+        "Section MGH258: metadata match rate 0.9228 (2212/2397 spots).",
+        "Section UKF243: metadata match rate 0.9272 (1796/1937 spots).",
+        "Section UKF248: metadata match rate 0.9921 (3020/3044 spots)."
+      ],
+      "per_sample_match_rates": {
+        "MGH258": 0.9228201919065498,
+        "UKF243": 0.9272070211667527,
+        "UKF248": 0.9921156373193167
+      }
+    }
+  },
+  "handoff_malignancy_columns": {
+    "cna_bin_available": true,
+    "columns_present": [
+      "cna_bin"
+    ],
+    "note": "cna_score/malignancy_score may be absent until Stage 2 inference; cna_bin is evaluation-oriented from visium_metadata when joined."
+  }
+}

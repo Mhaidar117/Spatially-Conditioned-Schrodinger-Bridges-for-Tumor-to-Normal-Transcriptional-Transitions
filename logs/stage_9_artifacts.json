@@ -1,0 +1,83 @@
+{
+  "stage": "stage_9_cross_modal_validation",
+  "status": "executed",
+  "coverage": {
+    "st_align_sample_dirs": [
+      "MGH258",
+      "ZH1007inf",
+      "ZH1007nec",
+      "ZH1019T1",
+      "ZH1019inf",
+      "ZH8811Bbulk",
+      "ZH881T1",
+      "ZH881inf",
+      "ZH916T1",
+      "ZH916inf"
+    ],
+    "n_codex_files": 13,
+    "metadata_sample_ids_used": [
+      "MGH258",
+      "UKF243",
+      "UKF248",
+      "UKF251",
+      "UKF255",
+      "UKF259",
+      "UKF260",
+      "UKF266",
+      "UKF269",
+      "UKF275",
+      "UKF296",
+      "UKF304",
+      "UKF313",
+      "UKF334",
+      "ZH1007inf",
+      "ZH1007nec",
+      "ZH1019T1",
+      "ZH1019inf",
+      "ZH8811Abulk",
+      "ZH8811Bbulk",
+      "ZH8812bulk",
+      "ZH881T1",
+      "ZH881inf",
+      "ZH916T1",
+      "ZH916bulk",
+      "ZH916inf"
+    ],
+    "overlap_with_metadata_samples": [
+      "MGH258",
+      "ZH1007inf",
+      "ZH1007nec",
+      "ZH1019T1",
+      "ZH1019inf",
+      "ZH8811Bbulk",
+      "ZH881T1",
+      "ZH881inf",
+      "ZH916T1",
+      "ZH916inf"
+    ]
+  },
+  "metrics_artifact_paths": {
+    "cross_modal_metrics_csv": "results/full_run_bayes/stage_9_cross_modal_metrics.csv"
+  },
+  "figure_paths": {
+    "cross_modal_coverage_png": "results/full_run_bayes/figures/stage_9_cross_modal_coverage.png"
+  },
+  "resource_presence": {
+    "st_align_dir_exists": true,
+    "codex_dir_exists": true,
+    "readme_codex_exists": true,
+    "readme_stalign_exists": true
+  },
+  "subset_coverage_notes": [
+    "Stage 9 applies only to samples with ST/CODEX alignment outputs.",
+    "Do not use CODEX-derived outputs from the same sample as both supervision and validation."
+  ],
+  "transport_backends_in_run": [
+    "SpatialBridge",
+    "SpatialBridge_linear"
+  ],
+  "unresolved_validation_gaps": [],
+  "log_path": "logs/stage_9_cross_modal_validation.log",
+  "test_script_path": "tests/test_stage_9_cross_modal_validation.py",
+  "artifact_manifest_path": "logs/stage_9_artifacts.json"
+}

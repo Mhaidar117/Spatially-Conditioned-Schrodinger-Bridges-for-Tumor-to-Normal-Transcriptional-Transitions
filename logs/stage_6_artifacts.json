@@ -1,0 +1,85 @@
+{
+  "scores_artifact_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_scores.csv",
+  "loadings_artifact_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_loadings.csv",
+  "model_comparison_artifact_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_factorization_comparison.csv",
+  "umap_figure_paths": [
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_dominant_program.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_nmf_program_score_panels.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_pca_dominant_partition.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_ica_dominant_partition.png",
+    "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures/stage_6_umap_marginal_labels_on_perturbation.png"
+  ],
+  "test_script_path": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/tests/test_stage_6_program_discovery.py",
+  "known_limitations": [
+    "Programs are fit on perturbation vectors (Stage 5); not raw expression.",
+    "NMF uses nonnegative shift of perturbations; PCA/ICA use raw perturbations for baseline comparison.",
+    "ICA can fail on small or rank-deficient matrices; see factorization_comparison note column.",
+    "Dominant PCA/ICA labels are argmax |score| heuristics, not mixture model assignments."
+  ],
+  "stage_7_handoff": {
+    "nmf_scores": {
+      "path_key": "nmf_scores_csv",
+      "schema": "index: spot_id; columns: program_0 .. program_{K-1} (nonnegative NMF spot scores)."
+    },
+    "nmf_loadings": {
+      "path_key": "nmf_loadings_csv",
+      "schema": "index: gene symbol/name (aligned to Stage 5 var_names); columns: program_* (gene weights)."
+    },
+    "factorization_comparison": {
+      "path_key": "factorization_comparison_csv",
+      "schema": "rows: NMF, PCA, ICA; columns include method, target, n_components, reconstruction_error, sparsity_loadings."
+    },
+    "baseline_score_matrices": {
+      "pca_scores_csv": "columns program_* = PCA score dimensions (ordered by variance).",
+      "ica_scores_csv": "columns program_* = ICA source axes (when ICA converges; may be zeros if fit failed)."
+    },
+    "method_names_in_comparison": [
+      "NMF",
+      "PCA",
+      "ICA"
+    ],
+    "safe_program_summaries_for_reports": [
+      "Per-spot NMF scores and dominant program index.",
+      "Top genes per program from loadings (post hoc).",
+      "Stratified mean NMF scores by marginal_label (if obs provided).",
+      "Reconstruction errors and sparsity from factorization_comparison.csv."
+    ],
+    "convergence_warnings": "See stage_6_program_discovery.log and ProgramDiscoveryResult.warnings; NMF max_iter and ICA failures are logged.",
+    "resolved_paths": {
+      "nmf_scores_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_scores.csv",
+      "nmf_loadings_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_nmf_loadings.csv",
+      "factorization_comparison_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_factorization_comparison.csv",
+      "pca_scores_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_pca_scores.csv",
+      "ica_scores_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_ica_scores.csv",
+      "stratified_marginal_csv": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_stratified_nmf_means_by_marginal_label.csv",
+      "diagnostics_json": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts/stage_6_program_diagnostics.json"
+    }
+  },
+  "output_directory": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_artifacts",
+  "figure_directory": "/Users/michaelhaidar/Documents/Vanderbilt/Spring_26/Comp_Bio/Spatial_Perturbations/results/stage_6_figures",
+  "umap_random_state": 42,
+  "n_components": 4,
+  "diagnostics": {
+    "perturbation_shape": [
+      240,
+      60
+    ],
+    "n_components": 4,
+    "nmf_reconstruction_relative_frobenius": 0.14351678605315593,
+    "pca_reconstruction_relative_frobenius": 0.8812002508078696,
+    "ica_reconstruction_relative_frobenius": 0.9218331480313285,
+    "nmf_stability": {
+      "skipped": false,
+      "mean_matched_loading_cosine": 0.9999999999997945,
+      "per_component_cosine": [
+        0.9999999999998721,
+        0.9999999999998057,
+        0.9999999999997822,
+        0.999999999999718
+      ],
+      "seed_a": 7,
+      "seed_b": 1007
+    }
+  },
+  "warnings": []
+}
