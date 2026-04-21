@@ -3,6 +3,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
+from .cna import assign_within_section_marginals
 from .config import PipelineConfig
 from .types import DatasetBundle
 
@@ -16,28 +17,21 @@ def _ensure_sections(obs: pd.DataFrame, section_column: str) -> pd.Series:
 def assign_marginals(bundle: DatasetBundle, cfg: PipelineConfig) -> DatasetBundle:
     obs = bundle.obs.copy()
     expr = bundle.expr
-    section = _ensure_sections(obs, cfg.state.section_column)
-    cna_col = cfg.state.cna_column if cfg.state.cna_column in obs.columns else cfg.cna.canonical_column
-    if cna_col not in obs.columns:
+    _ensure_sections(obs, cfg.state.section_column)
+    score_col = cfg.cna.canonical_column
+    if score_col not in obs.columns:
         raise ValueError(
             f"Cannot assign marginals without malignancy score. Expected '{cfg.cna.canonical_column}' in obs."
         )
 
-    labels = []
-    for sec in sorted(section.unique()):
-        idx = section == sec
-        cna_vals = obs.loc[idx, cna_col].astype(float).to_numpy()
-        lo = np.quantile(cna_vals, cfg.state.low_quantile)
-        hi = np.quantile(cna_vals, cfg.state.high_quantile)
-        sec_labels = np.where(cna_vals >= hi, "tumor", np.where(cna_vals <= lo, "normal", "intermediate"))
-        labels.extend(sec_labels.tolist())
-        obs.loc[idx, "cna_low_threshold"] = lo
-        obs.loc[idx, "cna_high_threshold"] = hi
-
-    obs["marginal_label"] = labels
-    obs["is_pseudo_paired_within_section"] = True
-    obs["spot_representation"] = "pseudo_cell_mixture"
-    return DatasetBundle(expr=expr, obs=obs, var_names=bundle.var_names, source_path=bundle.source_path, dataset_kind=bundle.dataset_kind)
+    obs, _, _ = assign_within_section_marginals(obs, cfg)
+    return DatasetBundle(
+        expr=expr,
+        obs=obs,
+        var_names=bundle.var_names,
+        source_path=bundle.source_path,
+        dataset_kind=bundle.dataset_kind,
+    )
 
 
 def split_by_section(bundle: DatasetBundle, cfg: PipelineConfig) -> dict[str, np.ndarray]:

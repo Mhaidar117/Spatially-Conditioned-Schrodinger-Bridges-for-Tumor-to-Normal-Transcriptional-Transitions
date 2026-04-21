@@ -27,7 +27,15 @@ class StateConfig:
 class CNAConfig:
     canonical_column: str = "cna_score"
     aliases: list[str] = field(default_factory=lambda: ["cna_score", "malignancy_score", "cna", "malignancy"])
+    # Require an existing precomputed continuous CNA score (no fallback inference/proxy).
+    require_true_score: bool = True
+    # Optional explicit path to precomputed per-spot CNA scores (.rds produced by upstream CNA workflow).
+    true_score_rds_path: str = ""
+    # Optional explicit path mapping merged CNA sample IDs to concrete section/sample IDs.
+    true_score_regions_path: str = ""
     infer_if_missing: bool = True
+    # Top highly variable genes (after log-CPM) for expression-program fallback when CNA-style inference is unavailable.
+    program_fallback_top_genes: int = 800
     gene_annotation_path: str = ""
     gene_id_column: str = "gene_id"
     chromosome_column: str = "chromosome"
@@ -59,16 +67,41 @@ class TrainConfig:
 
 
 @dataclass
+class BridgeConfig:
+    """Hyperparameters for the spatially conditioned bridge / score fit (Stage 4)."""
+
+    backend: str = "bayesian_linear"
+    ridge_lambda: float = 1e-3
+    transport_n_steps: int = 12
+    reverse_step_size: float = 0.2
+    neural_hidden_dim: int = 256
+    neural_num_layers: int = 2
+    neural_dropout: float = 0.05
+    neural_learning_rate: float = 1e-3
+    neural_weight_decay: float = 1e-4
+    neural_train_steps: int = 400
+    neural_device: str = "auto"
+
+
+@dataclass
 class ProgramConfig:
     max_components: int = 12
     chosen_components: int = 6
     random_seed: int = 7
+    umap_random_state: int = 42
+    figure_dpi: int = 200
+    top_genes_log: int = 12
+    nmf_max_iter: int = 500
 
 
 @dataclass
 class ReportConfig:
     title: str = "Omega Spatial Control Report"
     include_pdf: bool = True
+    enrichment_gmt_path: str = ""
+    enrichment_top_genes: int = 200
+    enrichment_min_set_size: int = 10
+    enrichment_max_set_size: int = 500
 
 
 @dataclass
@@ -82,6 +115,7 @@ class PipelineConfig:
     cna: CNAConfig = field(default_factory=CNAConfig)
     spatial: SpatialConfig = field(default_factory=SpatialConfig)
     train: TrainConfig = field(default_factory=TrainConfig)
+    bridge: BridgeConfig = field(default_factory=BridgeConfig)
     programs: ProgramConfig = field(default_factory=ProgramConfig)
     report: ReportConfig = field(default_factory=ReportConfig)
 

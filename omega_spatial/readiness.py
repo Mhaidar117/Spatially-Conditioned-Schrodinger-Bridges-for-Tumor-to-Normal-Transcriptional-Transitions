@@ -2,11 +2,12 @@ from __future__ import annotations
 
 from dataclasses import asdict
 from pathlib import Path
+from typing import Any
 
 import pandas as pd
 
 from .config import PipelineConfig
-from .types import DatasetBundle, ReadinessReport
+from .types import DatasetBundle, IngestionDiagnostics, ReadinessReport
 
 
 def _find_spatial_columns(obs: pd.DataFrame, cfg: PipelineConfig) -> tuple[str, str] | None:
@@ -19,13 +20,63 @@ def _find_spatial_columns(obs: pd.DataFrame, cfg: PipelineConfig) -> tuple[str, 
     return None
 
 
+def get_ingestion_diagnostics(bundle: DatasetBundle) -> IngestionDiagnostics | None:
+    """Parse Stage 1 ingestion summary stored on ``obs.attrs['omega_ingestion']``."""
+    raw = bundle.obs.attrs.get("omega_ingestion") if hasattr(bundle.obs, "attrs") else None
+    if not raw or not isinstance(raw, dict):
+        return None
+    try:
+        return IngestionDiagnostics(**raw)
+    except TypeError:
+        return None
+
+
+def diagnose_stage1_ingestion(bundle: DatasetBundle) -> dict[str, Any]:
+    """
+    Human- and machine-readable Stage 1 report: schema, join coverage, evaluation columns.
+    Intended for logs and ``stage_1_artifacts.json``.
+    """
+    obs = bundle.obs
+    n_spots, n_genes = int(bundle.expr.shape[0]), int(bundle.expr.shape[1])
+    required = ["section_id", "x", "y"]
+    missing_required = [c for c in required if c not in obs.columns]
+    eval_present = [c for c in ("mp", "layer", "ivygap", "org1", "org2", "cc", "cna_bin") if c in obs.columns]
+    malig_present = [c for c in ("cna_score", "malignancy_score", "cna_bin") if c in obs.columns]
+    join_rate = None
+    if "metadata_joined" in obs.columns:
+        join_rate = float(obs["metadata_joined"].astype(bool).mean())
+    ing = get_ingestion_diagnostics(bundle)
+    return {
+        "dataset_kind": bundle.dataset_kind,
+        "source_path": str(bundle.source_path),
+        "n_spots": n_spots,
+        "n_genes": n_genes,
+        "n_sections": int(obs["section_id"].nunique()) if "section_id" in obs.columns else 0,
+        "missing_canonical_columns": missing_required,
+        "evaluation_columns_present": eval_present,
+        "malignancy_related_columns_present": malig_present,
+        "cna_bin_available": "cna_bin" in obs.columns,
+        "metadata_join_coverage": join_rate,
+        "spot_id_in_obs": "spot_id" in obs.columns,
+        "barcode_in_obs": "barcode" in obs.columns,
+        "ingestion_diagnostics": asdict(ing) if ing is not None else None,
+    }
+
+
 def _find_cna_column(obs: pd.DataFrame, cfg: PipelineConfig) -> str | None:
+    blocklisted = {"cna_bin", "layer", "ivygap", "org1", "org2", "mp"}
     if cfg.state.cna_column in obs.columns:
-        return cfg.state.cna_column
+        vals = pd.to_numeric(obs[cfg.state.cna_column], errors="coerce")
+        if vals.notna().sum() > 0:
+            return cfg.state.cna_column
     for col in obs.columns:
         lower = str(col).lower()
+        if lower in blocklisted:
+            continue
         if "cna" in lower or "malignan" in lower:
-            return str(col)
+            vals = pd.to_numeric(obs[col], errors="coerce")
+            if vals.notna().sum() > 0:
+                return str(col)
     return None
 
 
@@ -41,7 +92,11 @@ def validate_schema(bundle: DatasetBundle, cfg: PipelineConfig) -> ReadinessRepo
     if spatial is None:
         issues.append("Missing spatial coordinates (x/y).")
         recs.append("Add x and y columns (or spatial obsm for h5ad).")
-    if cna is None and not cfg.cna.infer_if_missing:
+    if cna is None and cfg.cna.require_true_score:
+        issues.append(
+            f"Missing true CNA score '{cfg.cna.canonical_column}'. Stage 2 is configured to hard-fail without precomputed true CNA."
+        )
+    elif cna is None and not cfg.cna.infer_if_missing:
         issues.append(
             f"Missing malignancy score and cna.infer_if_missing=false. Provide '{cfg.cna.canonical_column}' or enable inference."
         )
